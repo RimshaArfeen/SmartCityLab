@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import "./Navbar.css";
-import Logo from "../Imgs/NCAI Logo-01.png"
+import Logo from "../Imgs/NCAI Logo-01.png";
 import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -11,30 +11,28 @@ const Navbar = () => {
   }
 
   return (
-    <header className="body-font  top-0 text-gray-600 relative  ">
-      <div className="w-[100%] mx-auto flex flex-col flex-wrap s items-center p-2 md:flex-row">
-        <a className="title-font flex items-center justify-center md:justify-around md:mb-0 w-4/5
-         md:w-full lg:w-1/4">
-          <span className='Logo p-2'><img src={Logo} alt="NCAI" className='w-3/4 h-auto md:w-1/3 lg:w-[60%] md:mx-auto ' /></span>
+    <header className="body-font top-0 text-gray-600 relative">
+      <div className="w-[100%] mx-auto flex flex-col flex-wrap items-center p-2 md:flex-row">
+        <a className="title-font flex items-center justify-center md:justify-around md:mb-0 w-4/5 md:w-full lg:w-1/4">
+          <span className='Logo p-2'>
+            <img src={Logo} alt="NCAI" className='w-3/4 h-auto md:w-1/3 lg:w-[60%] md:mx-auto' />
+          </span>
           <div className="barMenu w-1/5 flex justify-center items-center">
             <button className="hover:cursor-pointer md:hidden my-6" onClick={toggleBtn}>
               <i className="ri-menu-line text-[2rem]"></i>
             </button>
           </div>
         </a>
-        {/* <hr className=' h-[0.5px] w-full hidden md:block lg:hidden bg-blue-700 my-1' /> */}
         <nav className={`flex-col md:flex-row flex-wrap items-start md:items-center justify-around text-base md:ml-auto md:mr-auto 
           ${toggle ? "flex" : "hidden"} md:flex w-full lg:w-[70%] mt-4 lg:mt-0`}>
           <div className="dropdown md:border-none border py-1">
             <NavLink to="/" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Smart City</NavLink>
           </div>
           <div className="dropdown md:border-none border py-1">
-            <div className=' flex items-center justify-center'>
-            <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">About Us</NavLink>
-            <i class="ri-arrow-drop-down-fill text-2xl text-gray-200 -ml-4"></i>
-
+            <div className='flex items-center justify-center'>
+              <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">About Us</NavLink>
+              <i className="ri-arrow-drop-down-fill text-2xl text-gray-200 -ml-4"></i>
             </div>
-
             <ul className="dropdown-menu">
               <li><NavLink to="/about" className='mt-[0.3rem]'>About Us</NavLink></li>
               <li><NavLink to="/about/projects">Our Projects</NavLink></li>
@@ -43,57 +41,39 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="dropdown md:border-none border py-1">
-            <div  className=' flex items-center justify-center'>
-
-            <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">news and events</NavLink>
-            <i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
+            <div className='flex items-center justify-center'>
+              <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">news and events</NavLink>
+              <i className="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
             </div>
             <ul className="dropdown-menu">
               <li><NavLink to="/newsAndEvents/news" className='mt-[0.3rem]'>news</NavLink></li>
               <li><NavLink to="/newsAndEvents/events">Events</NavLink></li>
-              <li><NavLink to="/newsAndEvents/visits"  className='rounded-b-lg'>Visits</NavLink></li>
-
+              <li><NavLink to="/newsAndEvents/visits" className='rounded-b-lg'>Visits</NavLink></li>
             </ul>
           </div>
-
-           <div className="dropdown md:border-none border py-1">
-          <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">We Offer</NavLink>
-<i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
-</div>
+          <div className="dropdown md:border-none border py-1">
+            <div className='flex items-center justify-center'>
+              <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">We Offer</NavLink>
+              <i className="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
+            </div>
             <ul className="dropdown-menu">
               <li><NavLink to="/weOffer/products" className='mt-[0.3rem]'>Our Products</NavLink></li>
               <li><NavLink to="/weOffer/services">Our Services</NavLink></li>
               <li className="relative">
-              <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Competence And Development Program</NavLink>
-<i class="ri-arrow-drop-right-fill text-3xl -ml-4 text-gray-200"></i>
-</div>
+                <div className='flex items-center justify-center'>
+                  <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Competence And Development Program</NavLink>
+                  <i className="ri-arrow-drop-right-fill text-3xl -ml-4 text-gray-200"></i>
+                </div>
                 <ul className="dropdown-menu absolute left-full top-0 hidden group-hover:flex flex-col space-y-1">
-                  <li><NavLink to="/weOffer/competence/workshops" className=" rounded-t-lg">Workshop</NavLink></li>
+                  <li><NavLink to="/weOffer/competence/workshops" className="rounded-t-lg">Workshop</NavLink></li>
                   <li><NavLink to="/weOffer/competence/courses">Courses</NavLink></li>
-                  <li><NavLink to="/weOffer/competence/webinars" className="rounded-b-lg" >Webinars</NavLink></li>
+                  <li><NavLink to="/weOffer/competence/webinars" className="rounded-b-lg">Webinars</NavLink></li>
                 </ul>
               </li>
             </ul>
           </div>
-
           <div className="dropdown md:border-none border py-1">
-          <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Achievements</NavLink>
-<i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
-</div>
-            <ul className="dropdown-menu">
-              <li><NavLink to="/" className='mt-[0.3rem]'>Achievement 1</NavLink></li>
-              <li><NavLink to="/">Achievement 2</NavLink></li>
-              <li><NavLink to="/" className="rounded-b-lg">Achievement 3</NavLink></li>
-            </ul>
-          </div>
-          <div className="dropdown md:border-none border py-1">
-            <NavLink to="/contact" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0" >Contact Us</NavLink>
+            <NavLink to="/contact" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Contact Us</NavLink>
           </div>
         </nav>
       </div>
@@ -102,108 +82,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-=======
-import React, { useState } from 'react';
-import "./Navbar.css";
-import Logo from "../Imgs/NCAI Logo-01.png"
-import { NavLink } from 'react-router-dom';
-const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
-  const toggleBtn = () => {
-    setToggle(!toggle);
-  }
-
-  return (
-    <header className="body-font  top-0 text-gray-600 relative  ">
-      <div className="w-[100%] mx-auto flex flex-col flex-wrap s items-center p-2 md:flex-row">
-        <a className="title-font flex items-center justify-center md:justify-around md:mb-0 w-4/5
-         md:w-full lg:w-1/4">
-          <span className='Logo p-2'><img src={Logo} alt="NCAI" className='w-3/4 h-auto md:w-1/3 lg:w-[60%] md:mx-auto ' /></span>
-          <div className="barMenu w-1/5 flex justify-center items-center">
-            <button className="hover:cursor-pointer md:hidden my-6" onClick={toggleBtn}>
-              <i className="ri-menu-line text-[2rem]"></i>
-            </button>
-          </div>
-        </a>
-        {/* <hr className=' h-[0.5px] w-full hidden md:block lg:hidden bg-blue-700 my-1' /> */}
-        <nav className={`flex-col md:flex-row flex-wrap items-start md:items-center justify-around text-base md:ml-auto md:mr-auto 
-          ${toggle ? "flex" : "hidden"} md:flex w-full lg:w-[70%] mt-4 lg:mt-0`}>
-          <div className="dropdown md:border-none border py-1">
-            <NavLink to="/" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Smart City</NavLink>
-          </div>
-          <div className="dropdown md:border-none border py-1">
-            <div className=' flex items-center justify-center'>
-            <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Research</NavLink>
-            <i class="ri-arrow-drop-down-fill text-2xl text-gray-200 -ml-4"></i>
-
-            </div>
-
-            <ul className="dropdown-menu">
-              <li><NavLink to="" className='mt-[0.3rem]'>Research Areas</NavLink></li>
-              <li><NavLink to="/about/projects">Our Projects</NavLink></li>
-              <li><NavLink to="/about/blogs">Our Blogs</NavLink></li>
-              <li><NavLink to="/about/team" className='rounded-b-lg'>Team</NavLink></li>
-            </ul>
-          </div>
-          <div className="dropdown md:border-none border py-1">
-            <div  className=' flex items-center justify-center'>
-
-            <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">newsletters</NavLink>
-            <i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
-            </div>
-            <ul className="dropdown-menu">
-              <li><NavLink to="/newsAndEvents/news" className='mt-[0.3rem]'>news</NavLink></li>
-              <li><NavLink to="/newsAndEvents/events">Events</NavLink></li>
-              <li><NavLink to="/newsAndEvents/visits"  className='rounded-b-lg'>Visits</NavLink></li>
-
-            </ul>
-          </div>
-
-           <div className="dropdown md:border-none border py-1">
-          <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">We Offer</NavLink>
-<i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
-</div>
-            <ul className="dropdown-menu">
-              <li><NavLink to="/weOffer/products" className='mt-[0.3rem]'>Our Products</NavLink></li>
-              <li><NavLink to="/weOffer/services">Our Services</NavLink></li>
-              <li className="relative">
-              <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Competence And Development Program</NavLink>
-<i class="ri-arrow-drop-right-fill text-3xl -ml-4 text-gray-200"></i>
-</div>
-                <ul className="dropdown-menu absolute left-full top-0 hidden group-hover:flex flex-col space-y-1">
-                  <li><NavLink to="/weOffer/competence/workshops" className=" rounded-t-lg">Workshop</NavLink></li>
-                  <li><NavLink to="/weOffer/competence/courses">Courses</NavLink></li>
-                  <li><NavLink to="/weOffer/competence/webinars" className="rounded-b-lg" >Webinars</NavLink></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <div className="dropdown md:border-none border py-1">
-          <div  className=' flex items-center justify-center'>
-
-<NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Leaderships/organization</NavLink>
-<i class="ri-arrow-drop-down-fill text-2xl -ml-4 text-gray-200"></i>
-</div>
-            <ul className="dropdown-menu">
-              <li><NavLink to="/team" className='mt-[0.3rem]'>Achievement 1</NavLink></li>
-              <li><NavLink to="/">Achievement 2</NavLink></li>
-              <li><NavLink to="/" className="rounded-b-lg">Achievement 3</NavLink></li>
-            </ul>
-          </div>
-          <div className="dropdown md:border-none border py-1">
-            <NavLink to="/contact" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0" >Contact Us</NavLink>
-          </div>
-        </nav>
-      </div>
-    </header>
-  );
-}
-
-export default Navbar;
->>>>>>> 0457ca2 (Added Navbar2)
