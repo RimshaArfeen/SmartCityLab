@@ -1,4 +1,3 @@
-
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import AboutUs from './Components/AboutUs/AboutUs'
@@ -23,6 +22,7 @@ import Webinars from './Components/Webinars/Webinars'
 import Services from './Components/Services/Services'
 import News from './Components/News/News'
 import Events from './Components/Events/Events'
+import Nav2 from './Components/Nav2/Nav2'
 
 function App() {
   const router = createBrowserRouter([
@@ -31,15 +31,15 @@ function App() {
       element: (
         <>
           <div className="bgImg ">
-      <img src={vecteezy_robot2} alt="" className=' ' />
-    </div>
+            <img src={vecteezy_robot2} alt="" className='' />
+          </div>
           <Navbar />
+          <Nav2 />
           <Main />
           <Content />
-          <Tech/>
-          
-          <AcademicCollab/>
-          <IndusCollab/>
+          <Tech />
+          <AcademicCollab />
+          <IndusCollab />
           <Footer />
         </>
       ),
@@ -49,8 +49,8 @@ function App() {
       element: (
         <>
           <Navbar />
+          <Nav2 />
           <Content />
-         
           <Footer />
         </>
       ),
@@ -60,18 +60,18 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Content></Content>
+          <Content />
           <Footer />
         </>
       ),
     },
     {
-      path: "/about/projects",
+      path: "/researchAreas/projects",
       element: (
         <>
           <Navbar />
-          <Projects/>
-            
+          <Nav2 />
+          <Projects />
           <Footer />
         </>
       ),
@@ -81,7 +81,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <ParentElement/>
+          <ParentElement />
           <Footer />
         </>
       ),
@@ -91,7 +91,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Team/>
+          <Team />
           <Footer />
         </>
       ),
@@ -101,7 +101,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Products/>
+          <Products />
           <Footer />
         </>
       ),
@@ -110,12 +110,11 @@ function App() {
       path: "/weOffer/competence/workshops",
       element: (
         <>
-        <div className='bg-gray-100 h-fit relative'>
-          <Navbar />
-          <WorkShops/>
-          <Footer />
-
-        </div>
+          <div className='bg-gray-100 h-fit relative'>
+            <Navbar />
+            <WorkShops />
+            <Footer />
+          </div>
         </>
       ),
     },
@@ -123,12 +122,11 @@ function App() {
       path: "/weOffer/services",
       element: (
         <>
-        <div className='bg-gray-100 h-fit relative'>
-          <Navbar />
-          <Services/>
-          <Footer />
-
-        </div>
+          <div className='bg-gray-100 h-fit relative'>
+            <Navbar />
+            <Services />
+            <Footer />
+          </div>
         </>
       ),
     },
@@ -137,27 +135,27 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Courses/>
+          <Courses />
           <Footer />
         </>
       ),
     },
     {
-      path :"/weOffer/competence/webinars",
-      element:(
+      path: "/weOffer/competence/webinars",
+      element: (
         <div>
-          <Navbar/>
-          <Webinars/>
-          <Footer/>
+          <Navbar />
+          <Webinars />
+          <Footer />
         </div>
-      )
+      ),
     },
     {
       path: "/newsAndEvents/news",
       element: (
         <>
           <Navbar />
-          <News/>
+          <News />
           <Footer />
         </>
       ),
@@ -167,7 +165,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Events/>
+          <Events />
           <Footer />
         </>
       ),
@@ -177,36 +175,30 @@ function App() {
       element: (
         <>
           <Navbar />
-          <VisitSlider/>
+          <VisitSlider />
           <Footer />
         </>
       ),
     },
-   
     {
-      path :"/contact",
+      path: "/contact",
       element: (
         <>
-        <div className='ImgMap '>
-          <Navbar />
-          <Contact/>
-          <Footer />
-
-        </div>
+          <div className='ImgMap '>
+            <Navbar />
+            <Contact />
+            <Footer />
+          </div>
         </>
       ),
     }
   ]);
-  return (
 
-    
-      <>
-    <RouterProvider router={router} />
+  return (
+    <>
+      <RouterProvider router={router} />
     </>
-  
-  )
+  );
 }
 
-export default App
-
-
+export default App;
