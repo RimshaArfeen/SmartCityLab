@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Tech {
   background: radial-gradient(circle at right, #0f82c4 15%, #012a62 43%, #000d1f 80%);
 }
@@ -23,3 +24,30 @@
   font-size: 30px; /* Increase arrow size */
   color: #000; /* Change arrow color */
 }
+=======
+.Tech {
+  background: radial-gradient(circle at right, #0f82c4 15%, #012a62 43%, #000d1f 80%);
+}
+
+.Tech  h1{
+  color: #e2f1f9;
+}
+.techIcons{
+  background-color:#b3e3ff ;
+  color: #001737;
+}
+.desc {
+  color: #bbbbdb;
+}
+
+.slick-prev, .slick-next {
+  width: 50px; /* Increase width */
+  height: 50px; /* Increase height */
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px; /* Increase arrow size */
+  color: #000; /* Change arrow color */
+}
+>>>>>>> e3d1264 (Your commit message)
