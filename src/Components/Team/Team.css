@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+
 .ourTeam{
     background: radial-gradient(circle at right, #0f82c4 15%, #012a62 43%, #000d1f 80%);
 }
@@ -7,14 +8,4 @@
 }
 .post{
     color:#003f90 ;
-=======
-.ourTeam{
-    background: radial-gradient(circle at right, #0f82c4 15%, #012a62 43%, #000d1f 80%);
-}
-.name{
-    color: #b54e00;
-}
-.post{
-    color:#003f90 ;
->>>>>>> e3d1264 (Your commit message)
 }
