@@ -24,6 +24,7 @@ import News from './Components/News/News'
 import Events from './Components/Events/Events'
 import Nav2 from './Components/Nav2/Nav2'
 
+
 function App() {
   const router = createBrowserRouter([
     {
