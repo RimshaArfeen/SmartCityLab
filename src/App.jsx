@@ -9,16 +9,14 @@ import AcademicCollab from './Components/AcadCollab/AcademicCollab'
 import IndusCollab from './Components/IndusCollab/IndusCollab'
 import Footer from './Components/Footer/Footer'
 import Products from './Components/OurProducts/Products'
-import WorkShops from './Components/Workshops/WorkShops'
 import Projects from './Components/Projects/Projects'
-import Courses from './Components/Courses/Courses'
+import Competence from './Components/Competence/Competence'
 import vecteezy_robot2 from "../src/Components/Imgs/vecteezy_robot2.jpg"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Blog from './Components/Blogs/Blog' 
 import VisitSlider from './Components/visit/VisitSlider'
 import Contact from './Components/ContactUs/Contact'
 import ParentElement from './Components/Blogs/ParentElement'
-import Webinars from './Components/Webinars/Webinars'
 import Services from './Components/Services/Services'
 import News from './Components/News/News'
 import Events from './Components/Events/Events'
@@ -108,12 +106,12 @@ function App() {
       ),
     },
     {
-      path: "/weOffer/competence/workshops",
+      path: "/weOffer/competence",
       element: (
         <>
           <div className='bg-gray-100 h-fit relative'>
             <Navbar />
-            <WorkShops />
+            <Competence />
             <Footer />
           </div>
         </>
@@ -131,26 +129,26 @@ function App() {
         </>
       ),
     },
-    {
-      path: "/weOffer/competence/courses",
-      element: (
-        <>
-          <Navbar />
-          <Courses />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: "/weOffer/competence/webinars",
-      element: (
-        <div>
-          <Navbar />
-          <Webinars />
-          <Footer />
-        </div>
-      ),
-    },
+    // {
+    //   path: "/weOffer/competence/courses",
+    //   element: (
+    //     <>
+    //       <Navbar />
+    //       <Courses />
+    //       <Footer />
+    //     </>
+    //   ),
+    // },
+    // {
+    //   path: "/weOffer/competence/webinars",
+    //   element: (
+    //     <div>
+    //       <Navbar />
+    //       <Webinars />
+    //       <Footer />
+    //     </div>
+    //   ),
+    // },
     {
       path: "/newsAndEvents/news",
       element: (

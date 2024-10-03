@@ -61,14 +61,14 @@ const Navbar = () => {
               <li><NavLink to="/weOffer/services">Our Services</NavLink></li>
               <li className="relative">
                 <div className='flex items-center justify-center'>
-                  <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Competence And Development Program</NavLink>
-                  <i className="ri-arrow-drop-right-fill text-3xl -ml-4 text-gray-200"></i>
+                  <NavLink to="/weOffer/competence" className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Competence And Development Program</NavLink>
+                  {/* <i className="ri-arrow-drop-right-fill text-3xl -ml-4 text-gray-200"></i> */}
                 </div>
-                <ul className="dropdown-menu absolute left-full top-0 hidden group-hover:flex flex-col space-y-1">
+                {/* <ul className="dropdown-menu absolute left-full top-0 hidden group-hover:flex flex-col space-y-1">
                   <li><NavLink to="/weOffer/competence/workshops" className="rounded-t-lg">Workshop</NavLink></li>
                   <li><NavLink to="/weOffer/competence/courses">Courses</NavLink></li>
                   <li><NavLink to="/weOffer/competence/webinars" className="rounded-b-lg">Webinars</NavLink></li>
-                </ul>
+                </ul> */}
               </li>
             </ul>
           </div>
