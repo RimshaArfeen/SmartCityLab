@@ -1,30 +1,35 @@
-[
-  {
-    "id": "v1",
-    "title": "Artificial Intelligence",
-    "imgUrl": "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?t=st=1726498110~exp=1726501710~hmac=6b072645117cbe37673009478f2b77afb4723cfd9e0220e9cc372acbf0fa0d66&w=740",
-    "description": "Our team is contributing to bring about the various ways in which artificial intelligence is transforming the world, from automating agricultural processes to offering decision support tools for medical procedures, and others.",
-    "css": "fade-down"
-  },
-  { 
-    "id": "v2",
-    "title": "Information Management System",
-    "imgUrl": "https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041866.jpg?t=st=1726499628~exp=1726503228~hmac=43c3833cdfd82a9a1c6d1495dfdc7a5da63aa1c481863b7d0ccf5e3b995f6c0b&w=740",
-    "description": "From managing and storing information to presenting data in a structured way, information management systems are the backbone of any industry. Our solutions provided will help industries to function and deliver services efficiently.",
-    "css": "fade-left"
-  },
-  {
-    "id": "v3",
-    "title": "Internet of Things (IoT)",
-    "imgUrl": "https://img.freepik.com/free-photo/futuristic-smart-city-with-5g-global-network-technology_53876-98438.jpg?t=st=1726498490~exp=1726502090~hmac=445a812197e572e9a813a527eaeda407d15f1ecab4036c457cfd83d51fb9b9ab&w=740",
-    "description": "The IoT is transforming our surroundings into a connected, data-driven digital universe. We are offering solutions for Data Monitoring, ease of Access, speedy operations and better time management.",
-    "css": "fade-up"
-  },
-  {
-    "id": "v4",
-    "title": "Mobile Augmented Reality",
-    "imgUrl": "https://img.freepik.com/free-photo/mobile-phone-glowing-blue-reflection-glass-generated-by-ai_188544-16845.jpg?t=st=1726498806~exp=1726502406~hmac=b0e29c253ec088ad26498dbdcaedc847fabb9efc844843b027038088c0a2ffdc&w=740",
-    "description": "Augmented reality has made significant progress in recent years. Many advanced systems are developed to facilitate the application of augmented reality. Mobile augmented reality is the new concept that will provide easy and portable access to technology.",
-    "css": "fade-right"
-  }
-]
+
+ [
+    {
+      "title": "Intelligent Cyber Systems",
+      "description": "Intelligent systems are complex and use a wide range of technologies.",
+      "icon": "ri-brain-line"
+    },
+    {
+      "title": "Information Management Systems",
+      "description": "IMS are tools used to support processes, operations, intelligence, and IT.",
+      "icon": "ri-database-2-line"
+    },
+    {
+      "title": "Mobile Augmented Reality",
+      "description": "Mobile augmented reality is one of the most explosive growth areas for AR applications currently.",
+      "icon": "ri-smartphone-line"
+    },
+    {
+      "title": "Internet Of Things (IOT)",
+      "description": "A system of interrelated computing devices, mechanical and digital machines.",
+      "icon": "ri-router-line"
+    },
+    {
+      "title": "Simulated Reality",
+      "description": "Simulated reality is the hypothesis that reality could be simulated to a degree.",
+      "icon": "ri-vr-line"
+    },
+    {
+      "title": "Smart Energy",
+      "description": "A smart energy system is a cost-effective, sustainable, and secure energy system in which renewable energy is used.",
+      "icon": "ri-flashlight-line"
+    }
+  ]
+
+

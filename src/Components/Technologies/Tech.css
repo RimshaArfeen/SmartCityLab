@@ -9,97 +9,17 @@
   background-color:#b3e3ff ;
   color: #001737;
 }
-.desc { 
+.desc {
   color: #bbbbdb;
 }
 
-.icon-box-content {
-  position: absolute;
-  left: 0;
-  top: 210px;
-  width: 100%;
-  height: 100%;
-  background: #0E3386;
-  opacity: .9;
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; */
-  color: #fff;
-  z-index: -1;
-  padding: 20px 30px 30px 30px;
-  -webkit-transition: .6s;
-  transition: .6s;
-  cursor: pointer;
-}
-.icon-box-content:hover {
-  top: 0;
-}
-.iconbox-content-heading {
-margin-bottom: 15px;
-  font-size: 16px;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.slick-prev, .slick-next {
+  width: 50px; /* Increase width */
+  height: 50px; /* Increase height */
+  z-index: 1;
 }
 
-.iconbox-content-heading i {
-  font-size: 30px;
-  margin-right: 15px;
+.slick-prev:before, .slick-next:before {
+  font-size: 30px; /* Increase arrow size */
+  color: #000; /* Change arrow color */
 }
-
-.iconbox-content-body p {
-  color: #e5e5e5;
-  font-size: 14px;
-  text-align: justify;
-  margin-bottom: 8px;
-}
-.read-more-btn {
-  text-transform: capitalize;
-  font-weight: 600;
-  color: white;
-}
-
-.iconbox-content-body a:hover {
-color: rgba(255, 255, 255, 0.514);
-}
-
-
-.read-more-btn i {
-  margin-right: 5px;
-}
-
-
-  /* [
-//     {
-//       "title": "Intelligent Cyber Systems",
-//       "description": "Intelligent systems are complex and use a wide range of technologies.",
-//       "icon": "ri-brain-line"
-//     },
-//     {
-//       "title": "Information Management Systems",
-//       "description": "IMS are tools used to support processes, operations, intelligence, and IT.",
-//       "icon": "ri-database-2-line"
-//     },
-//     {
-//       "title": "Mobile Augmented Reality",
-//       "description": "Mobile augmented reality is one of the most explosive growth areas for AR applications currently.",
-//       "icon": "ri-smartphone-line"
-//     },
-//     {
-//       "title": "Internet Of Things (IOT)",
-//       "description": "A system of interrelated computing devices, mechanical and digital machines.",
-//       "icon": "ri-router-line"
-//     },
-//     {
-//       "title": "Simulated Reality",
-//       "description": "Simulated reality is the hypothesis that reality could be simulated to a degree.",
-//       "icon": "ri-vr-line"
-//     },
-//     {
-//       "title": "Smart Energy",
-//       "description": "A smart energy system is a cost-effective, sustainable, and secure energy system in which renewable energy is used.",
-//       "icon": "ri-flashlight-line"
-//     }
-//   ] */
