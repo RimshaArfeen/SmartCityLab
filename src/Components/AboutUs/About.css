@@ -1,0 +1,29 @@
+
+.transitioned-image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 5s ease-in-out;
+    animation: imgTransition 20s infinite;
+  }
+  
+  @keyframes imgTransition {
+    0% {
+      background-image: url('https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?t=st=1728830524~exp=1728834124~hmac=4b0205e773bd71f5b4d345f3bb81a84ca0946301700efc9be9be932f40745cd0&w=740');
+    }
+    25% {
+      background-image: url('https://img.freepik.com/free-photo/people-office-analyzing-checking-finance-graphs_23-2150377132.jpg?t=st=1728830464~exp=1728834064~hmac=0d930029f701524d9284ad7cee004a568bf0eb545ca430485a0700c90eedf322&w=740');
+    }
+    50% {
+      background-image: url('https://img.freepik.com/free-photo/ai-technology-microchip-background-futuristic-innovation-technology-remix_53876-108532.jpg?t=st=1728830664~exp=1728834264~hmac=e35179f9f23e0bce6145f7835610284ed6c9fedd43076fb18698226060b4c1a9&w=740');
+    }
+    75% {
+      background-image: url('https://img.freepik.com/free-photo/cloud-computing-banner-background-smart-city_53876-108504.jpg?t=st=1728830739~exp=1728834339~hmac=b0189855851994abe147abe45f98137bf92a5cbe9ce03f12b011519f9877598d&w=740');
+    }
+    100% {
+      background-image: url('https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?t=st=1727951736~exp=1727955336~hmac=278536d089a23b12d2f5cf9ceb02f25d62eb6b81085926cd3c1367bf39114ae3&w=826');
+    }
+  }
+  

@@ -31,6 +31,6 @@ const Blog = ({ title, src, more, setTitle }) => {
 
        
   );
-};
+}; 
 
-export default Blog;
+export default Blog; 

@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import CoursesData from "./CoursesData.json";
 import './Courses.css';
-import TechCircle from "../Imgs/abstractTech.png"
-import TechPng from "../Imgs/circleBg.png"
 
 const Courses = () => {
   const [toggledCard, setToggledCard] = useState(null);
@@ -12,7 +10,7 @@ const Courses = () => {
   const handleToggle = (index) => {
     setToggledCard(toggledCard === index ? null : index);
   };
-
+ 
   return (
     <>
       <section className=" text-gray-600 body-font relative ">

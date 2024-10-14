@@ -1,4 +1,10 @@
 
+import newsLetter from "../Imgs/News/newsletter_19.jpg"
+import Ai_ML from "../Imgs/News/ai-festival-neduet.jpg"
+import express from "../Imgs/News/express.png"
+import newsCoverage from "../Imgs/News/newsCoverage.jpg"
+import Ned from "../Imgs/News/nedUni.jpg"
+
 export const News_ = [
     {
       vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/rvm.mp4", // Placeholder URL
@@ -9,7 +15,7 @@ export const News_ = [
       year: 21,
       description: "Our Manager Marketing Aaliya Tariq and Agriculture Engineer Sarah Jalal from Smart City Lab - NCAI, NED UET were live at 92 News HD Plus to pitch the idea of plastic recycling and waste management with ",
       readMore: "our in-house manufactured Reverse Vending Machine to promote environmental sustainability."
-    },
+    },  
     {
       vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/ai_fest_3.0.mp4", // Placeholder URL
       title: "AI Festival 3.0 held at NED University",
@@ -107,7 +113,7 @@ export const News_ = [
 //News Letters
 export const NewsLetter = [
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/newsletter.jpg", // Placeholder URL
+      imgUrl: newsLetter, // Placeholder URL
       title: "Newsletter '2019",
       category: "Year in Review",
       date: null,
@@ -117,7 +123,7 @@ export const NewsLetter = [
       readMore: "https://smartcitylab.neduet.edu.pk/newsletter.pdf"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/ai-festival-neduet.jpg", // Placeholder URL
+      imgUrl: Ai_ML, // Placeholder URL
       title: "AI Festival 2.0 held at NED University",
       category: "AI and ML",
       date: 22,
@@ -127,7 +133,7 @@ export const NewsLetter = [
       readMore: "https://www.brecorder.com/news/546822/"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/tribune.jpg", // Placeholder URL
+      imgUrl: express, // Placeholder URL
       title: "Express Tribune Covers NCAI",
       category: "News Coverage",
       date: 23,
@@ -138,7 +144,7 @@ export const NewsLetter = [
     },
   
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/NEDmaingate.png", // Placeholder URL
+      imgUrl: Ned, // Placeholder URL
       title: "AI Festival 2.0 held at NED University",
       category: "AI and ML",
       date: 6,
@@ -148,7 +154,7 @@ export const NewsLetter = [
       readMore: "https://enggpost.com/ai-festival-held-at-ned-university/"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/express.png", // Placeholder URL
+      imgUrl: newsCoverage, // Placeholder URL
       title: "Student created Smart Secure App",
       category: "Technology",
       date: 6,
