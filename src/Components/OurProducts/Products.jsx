@@ -1,93 +1,95 @@
 
-import React, { useState, useRef } from 'react';
-import {productData} from "./Product";
-import Icon from "../Imgs/processor.png"
-
+import React from 'react'
+import Circle from "../Imgs/circleBg.png"
 const Products = () => {
   return (
-    <section className="body-font pb-24 py-24 relative">
-            <div className=' h-24 w-full absolute -z-10 bg-indigo-900 top-0'></div>
+    <section class="body-font text-gray-600 ">
+     {/* Heading */}
+     <hr className=' w-full bg-amber-700 h-3 -mt-1' />
+     <div class="flex flex-col items-center md:flex-row w-full lg:w-5/6 mx-auto px-5 py-14 justify-around">
+  <h3 class="md:w-[25%] w-full p-2 text-3xl md:text-2xl text-center md:text-left font-medium my-2 uppercase md:border-l-4 border-l-amber-700">
+    Our <p class="inline md:block">Products</p>
+  </h3>
 
-      <div className="w-full xl:w-[90%] px-5 md:px-2 lg:px-10 mx-auto relative top-14">
-        <div class="flex flex-col text-center w-full mb-20 ">
-          <span className=' w-full'><img src={Icon} alt="" className=' w-20 mx-auto'
-           data-aos="zoom-out" data-aos-delay="300" /></span>
-          <h1 class="sm:text-3xl text-4xl font-semibold title-font mb-1 text-indigo-900 mt-4"
-           data-aos="fade-up" data-aos-delay="300">Our Products</h1>
-          <p class="lg:w-2/3 text-amber-600 mx-auto tracking-widest font-normal text-lg mb-4 uppercase"
-          data-aos="fade-up">
-            Empowering Future Innovators
-          </p>
-          <div className=' flex justify-center items-center'>
-            <hr className=' w-1/4 bg-indigo-800 h-[3px]'  data-aos="fade-right" data-aos-delay="300" />
-            <span><i class="ri-arrow-down-s-line text-4xl text-amber-700"  data-aos="fade-down" data-aos-delay="300"></i></span>
-            <hr className=' w-1/4 bg-indigo-800 h-[3px]'  data-aos="fade-left" data-aos-delay="300" />
-          </div>
+  <p class="md:w-[50%] w-full px-2 text-[1rem] my-3 md:my-0">
+  Our product range features innovative, high-quality solutions tailored for modern living. Each product reflects our commitment to excellence, offering superior performance and sustainable value.
+  </p>
+  <div className='md:w-[25%] w-full'>
+    <img src="https://img.freepik.com/free-photo/3d-delivery-robot-working_23-2151150167.jpg?t=st=1724676292~exp=1724679892~hmac=002ce4294b5df63e2e571c46a9741d7d9ae66cd66a00788c760b85ebd752f225&w=740" alt="" className=' w-full h-auto' />
+  </div>
+</div>
+
+      <div class="container shadow-md mt-20 md:mt-0 lg:w-5/6 my-8 bg-gray-200 rounded-lg mx-auto flex flex-col items-center px-5 py-10 md:flex-row">
+        <div class="mb-10 w-5/6 md:mb-0 md:w-[30%]">
+          <img class="ml-0 h-[40vh] rounded object-cover object-center md:mx-auto md:h-[60vh]" alt="hero" src="https://smartcitylab.neduet.edu.pk/images/workshops/RVM-.png" />
         </div>
 
-       
-          {
-            productData.map((item, index) => (
-              <>
-              <div key={index} className="w-full h-fit  mb-2  rounded-lg shadow-sm "
-               data-aos="fade-up">
-                <div className="w-full mx-auto py-8 flex flex-col lg:flex-row flex-wrap md:flex-nowrap md:justify-center ">
-                  <div className="mx-auto lg:ml-0 w-fit  px-4 lg:px-0 lg:w-1/4 xl:w-1/5 md:mb-0 mb-6 flex-shrink-0 flex flex-col p-2 h-fit justify-between "
-                  data-aos="fade-right">
-                    <span className="font-medium pr-4 capitalize text-indigo-950 text-lg md:text-sm lg:text-[1.2rem] title-font  md:pr-3"
-                    >{item.category}</span>
+        <div class="flex flex-col px-10 text-justify md:w-[70%] md:items-start md:pl-6 lg:flex-grow">
+          <h1 class="title-font mb-4 text-3xl font-semibold text-blue-900 sm:text-4xl">
+          Reverse Vending Machine
+            <p class="text-2xl font-medium text-amber-700 md:text-3xl">(RVM)</p>
+          </h1>
+          <div className="flex w-fit px-0 py-1 justify-center items-center my-1">
+            <span className='w-6 h-6 inline-flex justify-start items-center  text-amber-600'><i class="ri-calendar-check-line  text-xl"></i></span>
+            <h4 class="title-font text-sm font-medium text-amber-600">Februrary 2023</h4>
+          </div>
+          <p class="mb-8 leading-relaxed">A reverse vending machine can increase recycling rates at your workplace, which will lead to better plastic waste management – having a hugely positive impact on the environment. Get ROI on your Green Income through Advertising, Redemption Fees, Customer Data and PET Collected. For more Info, please visit e-bin.rcai.pk</p>
+        </div>
+      </div>
+      <div class="container shadow-md lg:w-5/6 my-8 bg-gray-200 rounded-lg mx-auto flex flex-col items-center px-5 py-10 md:flex-row">
+        <div class="mb-16 flex flex-col px-5 md:pl-16 md:mb-0 md:w-[70%] md:items-start md:pr-10 md:text-left lg:flex-grow">
+          <h1 class="title-font mb-4 text-2xl md:text-3xl font-medium uppercase text-indigo-900">Advanced Driver Monitoring System <span class=" text-[1.2rem] md:text-3xl text-amber-700">(ADMS)</span></h1>
+          <div className="flex w-fit px-0 py-1 justify-center items-center my-1">
+            <span className='w-6 h-6 inline-flex justify-start items-center  text-amber-600'><i class="ri-calendar-check-line  text-xl"></i></span>
+            <h4 class="title-font text-sm font-medium text-amber-600">Februrary 2023</h4>
+          </div>
+          <p class="mb-8 text-justify leading-relaxed">We are offering advanced driver monitoring systems, also known as ADMS, to Fleet Management Companies (FMC) and automotive industries which help our customers develop novel business solutions and ensure comfort and safety on the road.</p>
+        </div>
+        <div class="w-5/6 md:w-[30%]">
+          <img class="mx-auto my-auto hidden h-60 rounded object-cover object-center md:mx-0 md:block" alt="hero" src="https://smartcitylab.neduet.edu.pk/images/workshops/ADMS.png" />
+        </div>
+      </div>
+      <div class="container shadow-md lg:w-5/6 my-8 bg-gray-200 rounded-lg mx-auto flex flex-col items-center px-5 py-10 md:flex-row">
+        <div class="mb-10 w-5/6 md:mb-0 md:w-[30%]">
+          <img class="ml-0 h-[40vh] rounded object-cover object-center md:mx-auto " alt="hero" src="https://smartcitylab.neduet.edu.pk/images/workshops/IOT%20Devices%20(2).png" />
+        </div>
 
-                    <div className='w-full flex  items-center my-3 rounded-sm bg-[#17245e] hover:bg-[#1e307c] p-2
-                    pt-6 md:pt-3 px-3 '
-                   >
-                      <span className='w-fit p-2 px-3 bg-[#e0e0e0] rounded-full' ><i class="ri-calendar-check-line mx-auto text-xl text-[#02105c] "></i></span>
+        <div class="flex flex-col px-10 text-justify md:w-[70%] md:items-start md:pl-6 lg:flex-grow">
+          <h1 class="text-2xl font-semibold text-indigo-900 md:text-3xl uppercase">
+            IOT Devices
+            <p class="text-lg font-normal text-gray-700 capitalize">Digitized, real time water and gass flow monitoring solution
 
-                      <div className="flex flex-col justify-center items-start pl-2 my-3 "
-                      >
-                        <span className="text-xl font-semibold text-[#e0e0e0] md:px-1 ">{item.month}</span>
-                        <p className="text-lg text-[#b3b2b2] md:text-sm md:px-1 inline md:block">{item.year}</p>
+            </p>
+          </h1>
+          <div className="flex w-fit px-0 py-1 justify-center items-center my-1">
+            <span className='w-6 h-6 inline-flex justify-start items-center  text-amber-600'><i class="ri-calendar-check-line  text-xl"></i></span>
+            <h4 class="title-font text-sm font-medium text-amber-600">Februrary 2023</h4>
+          </div>
+          <p class="mb-8 leading-relaxed">Smart City Lab, brings you reliable, easy to install and remotely accessible telemetry devices, for effective liquid and gass flow monitoring at your facility.</p>
+        </div>
+      </div>
+      <div class="container shadow-md lg:w-5/6 my-8 bg-gray-200 rounded-lg mx-auto flex flex-col items-center px-5 py-10 md:flex-row">
 
-                      </div>
-                    </div>
+        <div class="mb-16 flex flex-col px-5 md:pl-16 md:mb-0 md:w-[70%] md:items-start md:pr-10 md:text-left lg:flex-grow">
+          <h1 class="text-2xl font-semibold text-indigo-900 md:text-3xl uppercase">
+            Soil Probes
+            <p class="text-lg font-normal text-gray-700 capitalize">Just the right amount, at the right place, at the right time
 
-                  </div>
-                  <div className=" w-[90%] lg:w-1/2 px-3  border-l-2 border-amber-600 mx-auto">
-                    <h2 className=" text-xl md:text-2xl uppercase tracking-wide font-semibold text-[#02105c] title-font mb-2" 
-                    >{item.title}</h2>
-                    <hr className=' h-[1.7px] w-5/6 bg-blue-800 mb-2' />
-                    <p className="md:text-sm lg:text-base text-justify text-gray-600
-                    " 
-                    >
-                      {item.description}
-                    </p>
-
-                  </div>
-                  <div className="w-auto my-4 lg:my-0 lg:w-[29%] h-[50vh] flex mx-auto md:mx-0 md:justify-start"
-                  >
-                    <img src={item.imgUrl} alt="" className="w-5/6 mx-auto lg:mx-3 h-full object-bottom rounded-sm
-                   transition-all  duration-500 hover:transform hover:scale-90 hover:shadow-md" />
-                  </div>
-                </div>
-              </div>
-               <hr className=' h-[2px] mx-auto w-5/6 bg-blue-800 my-10'
-               data-aos="zoom-in" />
-               </>
-            ))
-          }
-       
-        {/* <div className=' w-1/3 md:w-[15%] flex justify-between mx-auto my-5'>
-          <button className="button" onClick={previous} class=" p-3 px-4 rounded-full bg-red-800
-           text-red-100 hover:cursor-pointer hover:bg-red-600">
-            <i class="ri-arrow-left-s-line text-xl"></i>
-          </button>
-          <button className="button" onClick={next} class=" p-3 px-4 rounded-full bg-indigo-800
-           text-indigo-100 hover:cursor-pointer hover:bg-indigo-600">
-            <i class="ri-arrow-right-s-line text-xl"></i>
-          </button>
-        </div> */}
+            </p>
+          </h1>
+          <div className="flex w-fit px-0 py-1 justify-center items-center my-1">
+            <span className='w-6 h-6 inline-flex justify-start items-center  text-amber-600'><i class="ri-calendar-check-line  text-xl"></i></span>
+            <h4 class="title-font text-sm font-medium text-amber-600">Februrary 2023</h4>
+          </div>
+          <p class="mb-8 text-justify leading-relaxed">Our soil probes delivers a deep understanding of the Agri-soil offering real time and precision monitoring at multiple depths.</p>
+        </div>
+        <div class="w-5/6 md:w-[30%]">
+          <img class="mx-auto my-auto hidden h-60 rounded object-cover object-center md:mx-0 md:block" alt="hero" src="https://smartcitylab.neduet.edu.pk/images/workshops/Soil%20probes%20%20(2).png" />
+        </div>
       </div>
     </section>
-  );
-};
 
-export default Products;
+  )
+}
+
+export default Products

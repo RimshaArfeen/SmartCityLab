@@ -100,4 +100,3 @@ const WorkShops = () => {
 };
 
 export default WorkShops;
- 

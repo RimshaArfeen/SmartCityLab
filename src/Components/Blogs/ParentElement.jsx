@@ -1,85 +1,67 @@
+
+
+
 import React, { useState } from 'react';
-import Agriculture from './Agriculture';
-import AutonomousVehicle from './AutonomousVehicle';
-import { categories } from "./BlogDetails";
-import IoT from './IoT';
-import SocialProjects from './SocialProjects';
-
+import projects from './Blog';
+import BlogDetail from './BlogDetail';
+import blogList from './Blog.json';
+import Blog from './Blog';
 const ParentElement = () => {
-  const [Project, setProject] = useState('Agriculture');
-  const [clickedIndex, setClickedIndex] = useState(null); // To track which button is clicked
+  const [title, setTitle] = useState("");
 
-  const handleProject = (title, index) => {
-    setProject(title);
-    setClickedIndex(index); // Set the clicked button index
-  };
-
-  const renderComponent = () => {
-    switch (Project) {
-      case 'Agriculture':
-        return <Agriculture />;
-      case 'IoT':
-        return <IoT />;
-      case 'AutonomousVehicle':
-        return <AutonomousVehicle />;
-      case 'SocialProjects':
-        return <SocialProjects />;
-      case 'Ai In Healthcare':
-        return <AutonomousVehicle />;
-      default:
-        return null;
-    }
-  };
- 
   return (
-    <section className="text-gray-600 body-font">
-      {/* Background Section with Heading */}
-      <div
-        className="relative w-full h-[15vh] bg-indigo-950 bg-cover bg-center flex items-center justify-center"
-        // style={{
-        //   backgroundImage: `url("https://img.freepik.com/free-photo/businessman-interacting-with-futuristic-graphics_23-2151003719.jpg?t=st=1727883443~exp=1727887043~hmac=720d713b98271fbdd85d00c3d5cdbbe0d1f836855f1506ff8f7dc1d42c0d1534&w=740")`,
-        // }}
-       >
-      </div>
-        <h1 className="text-5xl font-bold text-indigo-950 drop-shadow-lg uppercase my-10 text-center">Our Blogs</h1>
+    <>
 
-      {/* Blog Categories and Content */}
-      <div className="w-full flex flex-col justify-between px-5 py-14 pb-0 mx-auto">
-        <div className="flex w-full justify-center items-center flex-wrap mb-10">
-          {categories.map((item, index) => (
-            <button
-              key={index}
-              className={`group p-4 md:w-[14%] md:mb-1 flex lg:flex-col justify-center items-center bg-gradient-to-t from-blue-100 to-blue-200 hover:cursor-pointer transform transition duration-300 ease-in-out relative overflow-hidden ${
-                clickedIndex === index ? 'scale-90' : ''
-              }`}
-              onClick={() => handleProject(item.title, index)}
-            >
-              {/* Background transition layer */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-t from-blue-400 to-transparent transition-all duration-500 ${
-                  clickedIndex === index || clickedIndex === null ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                }`}
-              ></div>
-
-              <div className="relative z-10 md:w-fit inline-flex flex-col items-center justify-center rounded-full text-indigo-500 flex-shrink-0">
-                <img src={item.imgUrl} alt={item.title} className="p-2 w-16 h-16" />
-
-                {/* Show title when hovered or active */}
-                <span
-                  className={`relative -top-4 transition-all transform duration-700 flex-grow lg:mt-3 items-center justify-center ${
-                    clickedIndex === index || 'group-hover:opacity-100 group-hover:top-2 opacity-0'
-                  }`}
-                >
-                  <h2 className="text-gray-900 text-base title-font font-medium">{item.title}</h2>
-                </span>
+      <section className="text-gray-600 body-font">
+        <div className="py-14 mx-auto flex flex-wrap w-full">
+          <div className="flex flex-col lg:flex-row justify-around items-center mb-24 py-10 pt-6">
+            <hr className="h-20 w-1 bg-amber-600 hidden lg:block rounded-lg lg:h-28 lg:-mr-4" />
+            <div className="text-center w-full md:pl-8 lg:pl-0 md:text-left md:-ml-0 lg:w-1/3">
+              <h2 className="text-2xl md:text-[2.6rem] lg:text-3xl text-indigo-900 font-semibold title-font uppercase">Explore Our</h2>
+              <p className="text-2xl md:text-[2.9rem] lg:text-[2.3rem] text-indigo-900 font-bold mt-3 uppercase">Latest Insights</p>
+            </div>
+            <div className="w-full lg:w-[62%] mt-6 md:-mt-8 lg:mt-0 flex flex-col md:flex-row justify-between items-center">
+              <div className="md:w-3/5 md:pl-6 lg:-ml-6 text-center md:text-left">
+                <p className="leading-relaxed text-sm md:text-sm">Dive into our blog to discover the latest innovations, trends, and insights in technology and beyond. From smart solutions to groundbreaking research, explore the ideas that are shaping the future.</p>
               </div>
-            </button>
+              <div className="flex w-full md:w-1/3 flex-wrap mt-6 md:-mt-16 lg:mt-0 md:-m-2 -m-1 h-fit">
+                <div className="flex flex-wrap w-full">
+                  <div className="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" className="w-full object-cover h-32 md:h-full object-center block" src="https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724803200&semt=ais_hybrid" />
+                  </div>
+                  <div className="md:p-2 p-1 w-1/2">
+                    <img alt="gallery" className="w-full object-cover h-32 md:h-full object-center block" src="https://img.freepik.com/free-photo/facial-recognition-collage-concept_23-2150038899.jpg?t=st=1724942001~exp=1724945601~hmac=88c85ecabf1a9782afe57066c8bfbb4f07432342b81477fb3c3ab7a6b79db7c3&w=740" />
+                  </div>
+                  <div className="md:p-2 p-1 w-full">
+                    <img alt="gallery" className="w-full h-32 md:h-full object-cover object-center block" src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010127.jpg?t=st=1724942527~exp=1724946127~hmac=671d87335b124d9fdfe1e91df105c836ed77720903e3bde6b6663db79d2266e9&w=740" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Blog components */}
+          {blogList.map((item, index) => (
+            <Blog
+              key={index}
+              title={item.title}
+              src={item.imgUrl}
+              more={item.learnMore}
+              setTitle={setTitle} // Pass setTitle to Blog component
+            />
           ))}
+
         </div>
-        <div className="w-full lg:w-5/6 mx-auto">{renderComponent()}</div>
-      </div>
-    </section>
+      </section>
+    
+      {/* BlogDetail component */}
+     
+      {title && (
+        <BlogDetail selectedTitle={title} />
+      )}
+      
+    </>
   );
-};
+}
 
 export default ParentElement;
