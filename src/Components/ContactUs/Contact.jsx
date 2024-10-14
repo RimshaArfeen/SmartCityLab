@@ -4,14 +4,14 @@ import Map from "../Imgs/Map.png"
 import "./Contact.css"
 const Contact = () => {
     return (
-        <section className='contactPg relative '>
+        <section className='contactPg relative top-24 '>
             <div className='w-full h-screen py-5'>
                 <img src={Map} alt='WorldMap' className=' text-green-500 opacity-75'>
                 </img>
-            </div>
+             </div>
             <div className="w-full flex flex-col lg:flex-row justify-between absolute  top-0 z-10 my-14">
                 <div className=' w-full md:w-3/4 mx-auto lg:w-[35%] xl:w-2/5 bg-transparent  flex flex-wrap'>
-
+ 
                     <div class="pl-6 w-full lg:pr-10 lg:py-6 lg:pt-3 mb-6 lg:mb-0 text-indigo-950">
                         <h1 class=" text-5xl title-font font-bold mb-4 uppercase">Get In <p className='inline lg:block lg:text-6xl'> Touch</p></h1>
                         <p class="leading-relaxed mb-4">Feel free to reach out to us. Our team is here to assist you with any inquiries you may have.</p>

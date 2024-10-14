@@ -3,10 +3,10 @@
     animation: scrollDown 0.6s ease-in 0s infinite;
     position: relative;
     font-size: 24px; /* Adjust size as needed */
-  }
+  } 
   
   @keyframes scrollDown {
-    0% {
+    0% { 
       top: -5;
       opacity: 0.3;
     }
@@ -18,4 +18,12 @@
       top: 40px;
       opacity: 1;
     }
+  }
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }

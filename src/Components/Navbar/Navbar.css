@@ -1,10 +1,14 @@
+
 header {
-  background-color: #000c1c;
+  background-color: #001a3bf8;
   box-shadow: #060f3b;
-  position: sticky;
+  position: fixed;
   z-index: 1000;
 }
-
+.Nav.active{
+  background-color: #001a3bf8; 
+  
+}
 .Logo {
   /* background-color: whitesmoke; */
 }
@@ -12,7 +16,6 @@ header {
 .nav-link {
   margin-right: 20px;
   text-transform: uppercase;
-  color: #d4d4d4;
   position: relative;
   cursor: pointer;
   text-decoration: none;
@@ -49,7 +52,6 @@ header {
 }
 
 .dropdown-menu a {
-  color: whitesmoke;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
