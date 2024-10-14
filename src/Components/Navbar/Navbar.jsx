@@ -1,21 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import Logo from "../Imgs/NCAI Logo-01.png";
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+ 
+  const changeBg = () => {
+    if (window.scrollY >= 40) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBg);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', changeBg);
+    };
+  }, []);
 
   const toggleBtn = () => {
     setToggle(!toggle);
   }
 
   return (
-    <header className="body-font top-0 text-gray-600 relative">
-      <div className="w-[100%] mx-auto flex flex-col flex-wrap items-center p-2 md:flex-row">
+    <header className = {`${isScrolled ? 'bg-primary ' : 'bg-[#0a0a0a86]'} text-white body-font fixed top-0 w-full transition-all z-50 duration-300`}>
+
+      <div  className="w-[100%] mx-auto flex flex-col flex-wrap items-center p-2 md:flex-row">
         <a className="title-font flex items-center justify-center md:justify-around md:mb-0 w-4/5 md:w-full lg:w-1/4">
           <span className='Logo p-2'>
-            <img src={Logo} alt="NCAI" className='w-3/4 h-auto md:w-1/3 lg:w-[60%] md:mx-auto' />
+            <img src={Logo} alt="NCAI" className='w-3/4 h-auto md:w-1/3 lg:w-[50%] md:mx-auto' />
           </span>
           <div className="barMenu w-1/5 flex justify-center items-center">
             <button className="hover:cursor-pointer md:hidden my-6" onClick={toggleBtn}>
@@ -70,6 +89,17 @@ const Navbar = () => {
                   <li><NavLink to="/weOffer/competence/webinars" className="rounded-b-lg">Webinars</NavLink></li>
                 </ul>
               </li>
+            </ul>
+          </div>
+          <div className="dropdown md:border-none border py-1">
+            <div className='flex items-center justify-center'>
+              <NavLink className="nav-link hover:cursor-pointer text-[1rem] ml-2 md:ml-0">Acheivements</NavLink>
+              <i className="ri-arrow-drop-down-fill text-2xl text-gray-200 -ml-4"></i>
+            </div>
+            <ul className="dropdown-menu">
+              <li><NavLink to="/acheivements/publications" className='mt-[0.3rem]'>Publications</NavLink></li>
+              <li><NavLink to="/about/projects">Success Stories</NavLink></li>
+              
             </ul>
           </div>
           <div className="dropdown md:border-none border py-1">
