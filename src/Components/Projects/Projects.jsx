@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import Detail from './ProjectDetail/Detail'
+import VecteezyRobot from "../Imgs/RobotLamp-.png"
+import AiImg from "../Imgs/AiIcon.png"
 
 import "./Project.css"
 import {
