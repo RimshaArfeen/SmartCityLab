@@ -4,11 +4,11 @@ const CompetenceContentCard = ({ content }) => {
   const {
     title,
     description,
-    imgUrl,    // Image URL for both webinars/workshops and courses
-    date,      // Date of the event or course
-    readmore,  // Additional details or "read more" content
-    category,  // Category of the content (optional)
-    presenter  // Presenter or speaker (optional, if available)
+    imgUrl,
+    date,
+    readmore,
+    category,
+    presenter
   } = content;
 
   return (
@@ -16,9 +16,9 @@ const CompetenceContentCard = ({ content }) => {
       {/* Render imgUrl for both webinars/workshops and courses */}
       {imgUrl ? (
         <img
-          src={imgUrl}  // Use imgUrl for both cases
+          src={imgUrl}
           alt={title}
-          className="w-32 h-32 object-cover rounded-full mr-6"
+          className="w-32 h-32 object-cover mr-6"  // Square shape with fixed width and height
         />
       ) : null}
 
@@ -27,7 +27,7 @@ const CompetenceContentCard = ({ content }) => {
         <p className="mt-2 text-gray-700">{description}</p>
         
         {/* Display additional fields if available */}
-        {date && <p className="mt-2 text-gray-500">{date}</p>}
+        {date && <p className="mt-2 text-yellow-500">{date}</p>}
         {readmore && <p className="mt-2 text-gray-500">{readmore}</p>}
         {category && <p className="mt-2 text-gray-500"><strong>Category:</strong> {category}</p>}
         {presenter && <p className="mt-2 text-gray-500"><strong>Presenter:</strong> {presenter}</p>}

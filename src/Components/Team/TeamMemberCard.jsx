@@ -17,23 +17,27 @@ const TeamMemberCard = ({ member }) => {
 
   return (
     <div className="bg-white p-6 shadow-lg rounded-lg flex items-center mb-6">
+      {/* Use square image instead of round by removing rounded-full */}
       <img
         src={img_url || imgUrl} // Fallback to imgUrl if img_url is not present
         alt={name}
-        className="w-32 h-32 object-cover rounded-full mr-6" // Changed to rounded-full for a circular image
+        className="w-32 h-32 object-cover mr-6"  // Square shape with fixed width and height
       />
       <div className="flex-1">
-        <h3 className="text-xl font-bold text-blue-900">{name}</h3>
-        {post && <p className="text-gray-600">{post}</p>}
-        {title && <p className="text-gray-600">{title}</p>}
+        {/* Name in black, other details in gold */}
+        <h3 className="text-xl font-bold text-black">{name}</h3>
+        {post && <p className="text-yellow-500">{post}</p>}
+        {title && <p className="text-yellow-500">{title}</p>}
         {specialization && (
-          <p className="text-gray-600">Specialization: {specialization}</p>
+          <p className="text-yellow-500">Specialization: {specialization}</p>
         )}
         {education && (
-          <p className="text-gray-600">Education: {education}</p>
+          <p className="text-yellow-500">Education: {education}</p>
         )}
         <p className="mt-2 text-gray-700">{description}</p>
         {read_more && <p className="mt-2 text-gray-700 italic">{read_more}</p>}
+        
+        {/* Social Media Links */}
         <div className="mt-4 flex space-x-4">
           {fbUrl && (
             <a
