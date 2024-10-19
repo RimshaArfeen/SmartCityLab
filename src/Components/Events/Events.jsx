@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { EventsData } from './EventData';
-
+import "./Event.css"
 const Events = () => {
   const [flip, setFlip] = useState(null);
 
@@ -10,11 +10,12 @@ const Events = () => {
   };
 
   return (
-    <section className="text-gray-600 body-font overflow-hidden mx-auto ">
-      <div className=' h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
-      <h1 className=' uppercase font-bold text-4xl text-indigo-800 w-full text-center relative top-36'
+    <> 
+         <div className='h-32 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+         <section className="text-indigo-700 body-font overflow-hidden mx-auto ">
+      <h1 className=' uppercase font-bold text-4xl text-indigo-800 w-full text-center relative top-36 md:top-56 lg:top-32 mb-1'
         data-aos="fade-up">Events</h1>
-      <div className='  w-full md:w-1/4 lg:w-1/4 mx-auto relative top-[9rem] flex justify-center items-center '
+      <div className='w-4/5 md:w-1/4 lg:w-1/4 mx-auto relative top-36 md:top-56 lg:top-32  flex justify-center items-center '
       >
         <hr className='w-1/3 bg-amber-600 h-[2px] mb-2'
           data-aos="fade-left" />
@@ -22,15 +23,15 @@ const Events = () => {
           data-aos="zoom-in"></i>
         <hr className='w-1/3 bg-amber-600 h-[2px] mb-2' data-aos="fade-right" />
       </div>
-      <div className="w-full lg:w-[90%] relative top-24  px-5 py-24 mx-auto">
+      <div className="w-full lg:w-[90%] relative top-10 md:top-28 lg:top-10  px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full items-start justify-around lg:justify-between ">
           {EventsData.map((item, index) => (
-            <div key={index} className=" w-full md:w-[45%] lg:w-[30%] flex flex-col items-start my-16 md:mb-10 lg:my-4 shadow-sm "
+            <div key={index} className=" w-full md:w-[45%] lg:w-[30%] flex flex-col items-start my-16 md:mb-10 lg:my-4"
               data-aos="fade-up">
               <div className="flip-card group">
                 <div className={`flip-card-inner transition-transform duration-500`}>
-                  <div className="flip-card-front h-72 lg:h-auto w-auto flex flex-col justify-center items-center  mb-14 mt-4 lg:mt-0">
-                    <img src={item.imgUrl} alt={item.title} className='w-fit h-fit object-bottom border-4 border-gray-400 shadow rounded' />
+                  <div className="flip-card-front flex flex-col justify-center items-center  mb-14 mt-4 lg:mt-0">
+                    <img src={item.imgUrl} alt={item.title} className='object-bottom border-2 border-gray-200 shadow-md rounded' />
 
                   </div>
 
@@ -46,7 +47,7 @@ const Events = () => {
                 </span>
                 <h4 class="title-font text-sm font-medium text-amber-600">{item.date} {item.month} {item.year}</h4>
               </div>
-              <h2 className=" w-full text-lg text-center uppercase ml-1 font-medium text-gray-900 mb-1 ">
+              <h2 className=" w-full text-lg text-center uppercase ml-1 font-medium text-indigo-700 mb-1 ">
                 {item.title}
               </h2>
               {/* <div className="flex items-center flex-wrap pb-4 mb-4 mt-auto w-full" 
@@ -72,6 +73,7 @@ const Events = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,0 +1,112 @@
+.achievements-section {
+  padding: 60px 20px;
+  background-color: #f3f3f3;
+}
+
+.achievements-heading {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b004b;
+  margin-bottom: 60px;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.achievements-heading::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #0073e6;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+.achievement {
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.achievement:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievement h2 {
+  font-size: 32px;
+  color: #0073e6;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.achievement p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.achievement ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+.achievement ul li {
+  color: #555;
+  padding: 8px 0;
+}
+
+/* Button Styling */
+.achievement-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.achievement-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements-heading {
+    font-size: 36px;
+  }
+
+  .achievement {
+    padding: 20px;
+  }
+
+  .achievement h2 {
+    font-size: 28px;
+  }
+
+  .achievement p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-heading {
+    font-size: 28px;
+  }
+
+  .achievement h2 {
+    font-size: 24px;
+  }
+
+  .achievement p {
+    font-size: 14px;
+  }
+}

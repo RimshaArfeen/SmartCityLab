@@ -5,45 +5,6 @@ import "./Tech.css"
 import Data from "./data.json"; // Assuming Data is an array in this JSON file
  
 const Tech = () => {
-    // var settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     autoplay: true,
-    //     speed: 2000,
-
-    //     cssEase: "linear",
-    //     responsive: [
-    //         {
-    //             breakpoint: 1280, // md screens and up
-    //             settings: {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 1,
-    //                 infinite: true,
-    //                 dots: true
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 1024, // md screens and up
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 1,
-    //                 infinite: true,
-    //                 dots: true
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 768, // sm screens
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 infinite: true,
-    //                 dots: true
-    //             }
-    //         }
-    //     ]
-    // };
 
     return (
        
@@ -59,7 +20,7 @@ const Tech = () => {
             <div class="col-lg-4 w-full lg:w-5/6 mx-auto flex flex-wrap justify-center items-center"
             data-aos="zoom-in"  data-aos-easing="ease-in-out">
                 {Data.map((item, index) => (
-                    <div key={index} class="relative w-full h-auto md:w-[47%] lg:w-2/5 md:h-1/3 bg-cover bg-center bg-gray-300 mx-3 mt-6 overflow-hidden z-10 single-icon-box"
+                    <div key={index} class="relative w-5/6 h-auto md:w-[47%] lg:w-2/5 md:h-1/3 bg-cover bg-center bg-gray-300 mx-3 mt-6 overflow-hidden z-10 single-icon-box"
                     data-aos="{`${item.css}`}"  data-aos-easing="ease-in-out">
                         <img src={item.imgUrl} alt="Technology" class=" w-full h-[40vh] " />
                         <div class="absolute left-0 top-[68%] md:top-[78%] lg:top-[73%] w-full h-full bg-[#08062b79] bg-opacity-90 text-white  px-4 xl:px-6  py-10 md:py-5 transition-all duration-700 cursor-pointer hover:top-0">
