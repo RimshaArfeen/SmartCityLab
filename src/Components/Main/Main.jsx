@@ -40,10 +40,10 @@ const Main = () => {
   };
   return (
     <>
-        <section class="main body-font overflow-hidden h-[58vh]  lg:h-[90vh] flex justify-center items-center relative z-10 top-20 ">
+        <section class="main body-font overflow-hidden h-[58vh]  lg:h-[90vh] flex justify-center items-center relative z-10 top-16 md:top-28 lg:top-12">
 
-          <div className=" w-fit mt-16 md:mt-0 flex flex-wrap justify-center items-center px-3 py-3 lg:py-20 md:mx-12 " data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1200" >
-            <div className="mb-1 md:mb-6 w-full md:m-8  lg:w-fit  ">
+          <div className="w-full md:w-fit mt-16 md:mt-0 flex flex-wrap justify-center items-center px-3 py-3 lg:py-20 md:mx-12 " data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1200">
+            <div className="mb-1 md:mb-6 w-full md:m-8 ">
               <h1 className="-mt-10 w-full text-[1rem] md:text-2xl lg:text-4xl font-normal uppercase text-gray-50 text-center lg:mb-8">Empowering Progress through <span className={`text-amber-600 text-2xl lg:text-[2.5rem] font-semibold ${fadeIn ? 'fade-in-text' : ''}`}>{text}</span></h1>
               <h1 className=" my-3 text-xl md:text-2xl lg:text-4xl font-semibold uppercase text-teal-100 text-center ">
                 National Center Of  Artificial Intelligence

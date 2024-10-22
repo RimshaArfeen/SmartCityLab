@@ -1,122 +1,57 @@
+import React, {useState} from 'react';
+import './Contact.css';
 
-import React from 'react'
-import Map from "../Imgs/Map.png"
-import "./Contact.css"
 const Contact = () => {
-    return (
-        <section className='contactPg relative top-24 '>
-            <div className='w-full h-screen py-5'>
-                <img src={Map} alt='WorldMap' className=' text-green-500 opacity-75'>
-                </img>
-             </div>
-            <div className="w-full flex flex-col lg:flex-row justify-between absolute  top-0 z-10 my-14">
-                <div className=' w-full md:w-3/4 mx-auto lg:w-[35%] xl:w-2/5 bg-transparent  flex flex-wrap'>
- 
-                    <div class="pl-6 w-full lg:pr-10 lg:py-6 lg:pt-3 mb-6 lg:mb-0 text-indigo-950">
-                        <h1 class=" text-5xl title-font font-bold mb-4 uppercase">Get In <p className='inline lg:block lg:text-6xl'> Touch</p></h1>
-                        <p class="leading-relaxed mb-4">Feel free to reach out to us. Our team is here to assist you with any inquiries you may have.</p>
-                        <nav class=" w-full list-none mx-auto text-gray-800">
-                            <span>
-                                <li class="flex items-start justify-start mt-3">
-                                    <span class="mr-2 h-12 w-12 bg-pink- p-2 pt-0"><i class="ri-map-pin-fill text-xl text-red-700"></i></span>
-                                    <a class=" text-sm"> 1st Floor Smart City Lab - HPCC Building NED
-                                        University of Engineering and Technology, Main University Road, Block 1, Gulistan-e-Johar,
-                                        Karachi(75270)-Sindh</a>
-                                </li>
-                            </span>
-                            <span>
-                                <li class="flex items-center justify-start mt-3">
-                                    <span class="mr-2 h-12 w-12 bg-pink- p-2"><i class="ri-mail-fill text-xl text-green-800 "></i></span>
-                                    <a class=" text-sm"> ncaismartcitylab@gmail.com</a>
-                                </li>
-                            </span>
-                            <span>
-                                <li class="flex items-center justify-start mt-3">
-                                    <span class="mr-2 h-12 w-12 bg-pink- p-2"><i class="ri-phone-fill text-xl text-amber-600"></i></span>
-                                    <a class=" text-sm"> +92-2199261261 (Ext.2682)</a>
-                                </li>
-                            </span>
-                        </nav>
-                    </div>
-
-
-                </div>
-                {/* form */}
-                <div class="form mx-1 flex flex-col md:mx-auto md:w-3/4 lg:w-[60%] xl:w-[48%] lg:mx-3 lg:mr-14 rounded-xl py-5  w-full justify-center items-center  px-6">
-<h1 className=' text-2xl text-gray-100 my-2 font-semibold capitalize'>We'd love to hear from you!</h1>
-                    {/* <!-- Full Name and Email --> */}
-                    <div class="w-full flex flex-col md:flex-row   text-gray-300">
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="full-name" class="leading-7 text-sm ">Fullname</label>
-                            <input type="text" id="full-name" name="full-name" class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                        </div>
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="email" class="leading-7 text-sm ">Email</label>
-                            <input type="email" id="email" name="email" placeholder='example@gmail.com' class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                        </div>
-                    </div>
-
-                    {/* <!-- Phone and Skills --> */}
-                    <div class="w-full flex flex-col md:flex-row   text-gray-300">
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="phone" class="leading-7 text-sm ">Phone</label>
-                            <input type="number" id="phone" name="phone" placeholder='03XX-XXXX-XXX' class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                        </div>
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="skills" class="leading-7 text-sm ">Skills</label>
-                            <select id="skills" name="skills" class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400  px-3 leading-8 transition-colors duration-200 ease-in-out py-2">
-                            <option value="">Your Skills</option>
-                                <option value="web">Web Development</option>
-                                <option value="app">App Development</option>
-                                <option value="ai">Artificial Intelligence</option>
-                                <option value="machine_learning">Machine Learning</option>
-                                <option value="Ui_Ux">Ui/Ux Designer</option>
-                                <option value="Video">Video Editor</option>
-                                <option value="writer">Content Writer</option>
-                                <option value="data">Data Scientist</option>
-
-
-                            </select>
-                        </div>
-                    </div>
-
-                    {/* <!-- Education and Experience --> */}
-                    <div class="w-full flex flex-col md:flex-row   text-gray-300">
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="education" class="leading-7 text-sm ">Education</label>
-                            <input type="text" id="education" name="education" class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                        </div>
-                        <div class="relative flex-grow w-full md:w-1/2 md:mx-3 my-2">
-                            <label for="experience" class="leading-7 text-sm ">Select Your Experience</label>
-                            <select id="experience" name="experience" class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400  px-3 leading-8 transition-colors duration-200 ease-in-out py-2">
-                                <option value="">Select Experience</option>
-                                <option value="0-1">0-1 Years</option>
-                                <option value="1-3">1-3 Years</option>
-                                <option value="3-5">3-5 Years</option>
-                                <option value="5+">5+ Years</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    {/* <!-- Message --> */}
-                    <div class="w-full flex flex-col">
-                        <div class="relative mb-4 md:mx-3 my-8">
-                            <textarea id="message" name="message" placeholder='Write something about yourself' class="w-full bg-transparent bg-opacity-50 rounded border border-gray-500 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-sm outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
-                        </div>
-                    </div>
-<div className="w-full flex flex-col mx-4  md:mx-3 my-6">
-<button class="text-indigo-950 bg-[#cacaca] font-semibold  border-0 py-2  px-6 focus:outline-none hover:bg-indigo-900 rounded text-lg">Submit</button>
-
-</div>
-                </div>
-
-
-
-
-            </div>
-        </section>
-
-    )
+    const [yourLoc, setYourLoc] = useState('Ncai karachi')
+const inputHandler = (e) => {
+ setYourLoc( e.target.value)
 }
 
-export default Contact
+    return (
+        <section className="text-gray-300 body-font relative bg-[#02152f] pb-16">
+        <div className="w-full xl:w-[90%] px-5 py-24 mx-auto flex sm:flex-nowrap justify-between flex-wrap relative md:top-20 lg:top-0">
+          <div className="lg:w-2/3 h-[82vh] md:w-1/2 lg:mr-4 xl:mr-12  rounded-lg overflow-hidden flex items-end justify-start relative">
+            <iframe width="100%" height="100%" className="absolute inset-0 top-5"  title="map" scrolling="no" src={`https://maps.google.com/maps?q=${yourLoc}&hl=en&z=6&output=embed`}></iframe>
+            
+          </div>
+          <div className="lg:w-1/3 md:w-[45%]  flex flex-col lg:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <h2 className="text-gray-100 text-lg lg:text-2xl mb-1 font-medium title-font">Get in Touch</h2>
+<p className="leading-relaxed mb-5">We value your feedback! Reach out to us and let us know how we can enhance our services.</p>
+
+
+            <div className="relative mb-4">
+              <label for="loc" className="leading-7 text-sm">Location</label>
+              <input type="text" id="loc" name="loc" className="w-full  rounded border border-gray-300 bg-[#5c5c5c28] focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={inputHandler}/>
+            </div>
+           <div className="relative flex lg:flex-col flex-wrap py-6 rounded shadow-md bg-[#07062e46]">
+  <div className="w-1/2 lg:w-full px-6 mb-3 flex items-start">
+    <i className="ri-map-pin-fill text-red-700 mr-3" style={{ fontSize: '24px' }}></i> {/* Address icon */}
+    <div>
+      <h2 className="title-font font-semibold text-gray-100 tracking-widest text-xs">ADDRESS</h2>
+      <p className="mt-1 font-light">Floor HPCC Building, NED University Of Engineering & Technology, Karachi, Karachi City, Sindh</p>
+    </div>
+  </div>
+  <div className="w-1/2 lg:w-full px-6 mt-4 lg:mt-0 flex items-start">
+    <i className="ri-mail-fill text-green-700 mr-3" style={{ fontSize: '24px' }}></i> {/* Email icon */}
+    <div>
+      <h2 className="title-font font-semibold text-gray-100 tracking-widest text-xs">EMAIL</h2>
+      <a className="text-amber-600 leading-relaxed font-light">ncaismartcitylab@gmail.com</a>
+    </div>
+  </div>
+  <div className="w-1/2 lg:w-full px-6 mt-4 lg:mt-0 flex items-start">
+    <i className="ri-phone-fill text-amber-600 mr-3" style={{ fontSize: '24px' }}></i> {/* Phone icon */}
+    <div>
+      <h2 className="title-font font-semibold text-gray-100 tracking-widest text-xs">PHONE</h2>
+      <p className="leading-relaxed font-light">+92-2199261261 (Ext.2682)</p>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </section>
+    );
+};
+
+export default Contact;

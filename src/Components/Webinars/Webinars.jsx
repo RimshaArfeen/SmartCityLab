@@ -1,5 +1,6 @@
 
-
+import { NavLink } from 'react-router-dom';
+import CategoryTabs from "../Competence/CategoryTabs"
 import React, { useState } from 'react';
 import data from "./Webinars.json";
 
@@ -11,6 +12,21 @@ const Webinars = () => {
   };
 
   return (
+    <>
+           <div className='w-full xl:w-4/5 mx-auto text-gray-200 relative z-30 top-24 md:top-48'>
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center py-4 uppercase text-base lg :w-5/6 justify-around">
+        <NavLink to="/research/projects" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-cyan-600 hover:underline underline-offset-4 p-1 rounded-lg  bg-[#24242465]  border px-2 border-gray-500">Research areas</NavLink>
+
+        <NavLink to="/research/projects" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-cyan-600 hover:underline underline-offset-4 p-1 rounded-lg  bg-[#24242465]  border px-2 border-gray-500">in focus</NavLink>
+
+        <NavLink to="/research/publications" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-cyan-600 hover:underline underline-offset-4 p-1 rounded-lg  bg-[#24242465]  border px-2 border-gray-500">publications</NavLink>
+
+        <NavLink to="/research/programs/webinars" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-cyan-600 hover:underline underline-offset-4 p-1 rounded-lg  bg-[#24242465]  border px-2 border-gray-500">competence development programs</NavLink>
+
+        
+     
+      </nav>
+    </div>
     <section className="text-gray-500 body-font py-12 ">
       <div className="container px-5 mx-auto">
         <div className="flex flex-wrap -mx-4 -mb-10  ">
@@ -59,6 +75,8 @@ const Webinars = () => {
         </div>
       </div>
     </section>
+   
+    </>
   );
 };
 

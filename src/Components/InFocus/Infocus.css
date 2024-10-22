@@ -1,0 +1,61 @@
+  #parent-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #boxes {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+
+  #header1 h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #img {
+    text-align: center;
+  }
+
+  #img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  #desc {
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #features {
+    margin-top: 20px;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+
+  .text hr {
+    margin-top: 10px;
+  }

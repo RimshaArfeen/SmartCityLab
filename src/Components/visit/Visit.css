@@ -1,18 +1,38 @@
-/* 
-.Slider{
-background-color: #f0f4f8 ;
-}
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%; /* Ensures the card takes full width */
+  }
 
-.Slider h1{
-    color: #1F3865 ; 
-   
-} 
- color palette
-{
-    color:  81957A; PISTA
-color:  #2C2C2C; BLACK
- color: #1F3865; BLUE
- color: #0080A7; SKY BLUE TYPE
- color: #F5BD60; YELLOW
- color: #FE755E; ORANGE
-} */
+  .flip-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card-front, .flip-card-back {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .flip-card-front img {
+    width: auto; /* Scale the image to fit within the card */
+    height: 15rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.875rem; /* Smaller font size for better readability */
+  }
+
+  h2.title-font {
+    font-size: 1rem; /* Adjust the title font size */
+  }
+
+  h4.title-font {
+    font-size: 0.875rem; /* Adjust date font size */
+  }
+
+  .flip-card .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

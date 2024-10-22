@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { News_, NewsLetter } from './NewsData'
 import "./News.css"
 const News = () => {
@@ -10,16 +11,27 @@ const News = () => {
 
 
     return (
-        <section class="body-font overflow-hidden text-gray-600 relative top-20">
-                <div  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="flex flex-col text-center w-fit my-16 mx-auto">
-                    
-                    <h1 class="text-3xl lg:text-5xl uppercase font-medium title-font mb-5 text-indigo-950"> News & Highlights</h1>
-                    <hr class=" h-[3px] bg-blue-900 w-full mx-auto " />
-                    <hr class=" h-2 bg-blue-900 w-full mx-auto mt-[1px]" />
+        <>
+        
+        <div className='h-36 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0 '></div>
 
+        <section class="body-font overflow-hidden text-gray-600 relative top-28 lg:top-16">
+                <div  data-aos="fade-down" data-aos-duration="1000" class="flex flex-col text-center w-fit my-16 mb-8 mx-auto">
+                    
+                <h1 className='uppercase font-bold text-4xl text-indigo-800 w-full text-center relative'
+        data-aos="fade-up">news and highlights</h1>
+      <div className='w-full mx-auto relative flex justify-center items-center '
+      >
+        <hr className='w-1/3 bg-amber-600 h-[2px] mb-2'
+          data-aos="fade-left" />
+        <i class="ri-snowflake-fill text-4xl font-medium text-indigo-800 mx-auto text-center"
+          data-aos="zoom-in"></i>
+        <hr className='w-1/3 bg-amber-600 h-[2px] mb-2' data-aos="fade-right" />
+      </div>
                 </div>
             <div class="mx-auto w-full flex flex-col md:flex-row flex-wrap items-center justify-between">
-                <div  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" className="md:w-[67%] lg:w-[70%] -m-12 mx-auto flex  flex-wrap border-2 border-gray-200 bg-gray-50 h-[80vh] overflow-y-auto scroll-my-5 rounded">
+                {/* News */}
+                <div className="md:w-[67%] lg:w-[70%] -m-12 mx-auto flex  flex-wrap border-2 border-gray-200 bg-gray-50 h-[80vh] overflow-y-auto scroll-my-5 rounded">
                     <div class="flex flex-col text-center w-fit my-6 px-5">
 
                         <h1 class="text-xl lg:text-3xl uppercase font-normal title-font mb-1 text-indigo-950">Recent stories and insights</h1>
@@ -97,8 +109,8 @@ const News = () => {
                 </div>
 
 
-
-                <div   data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300" className='w-[95%] border-2 border-gray-200 mx-auto md:w-[31%] lg:w-1/4 px-4 lg:px-8 flex flex-col md:border-l-[1px] bg-gray-50 my-12 md:my-0 mt-24 md:mt-0 h-[80vh] overflow-y-auto scroll-my-5 rounded'>
+                {/* NewsLetters */}
+                <div className='w-[95%] border-2 border-gray-200 mx-auto md:w-[31%] lg:w-1/4 px-4 lg:px-8 flex flex-col md:border-l-[1px] bg-gray-50 my-12 md:my-0 mt-24 md:mt-0 h-[80vh] overflow-y-auto scroll-my-5 rounded'>
                 <div class="flex flex-col text-center w-fit my-6  px-5 mx-auto">
 <h5 class="text-xs uppercase font-normal title-font mb-1 text-indigo-950">Get the Latest with</h5>
 <h1 class="text-lg lg:text-xl uppercase font-medium title-font mb-1 text-indigo-950"> Our Newsletters</h1>
@@ -133,6 +145,7 @@ const News = () => {
 
             </div>
         </section>
+        </>
 
     )
 }

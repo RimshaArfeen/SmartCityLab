@@ -8,7 +8,10 @@ import {
 
 const Snapshots = () => {
     return (
-        <section class="text-gray-600 body-font relative top-20">
+        <>
+        <div className='h-36 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0 '></div>
+
+        <section class="text-gray-600 body-font relative top-28 md:top-40 lg:top-24">
             <div class=" w-full xl:w-[86%] px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4">
                     {SnapData.map((item, index) => (
@@ -99,6 +102,7 @@ const Snapshots = () => {
             </div>
 
         </section>
+        </>
     )
 }
 
