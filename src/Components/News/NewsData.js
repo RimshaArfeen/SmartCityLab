@@ -1,7 +1,26 @@
+//NEWS Imgs
+import newsLetter from "../Imgs/News/newsletter_19.jpg"
+import Ai_ML from "../Imgs/News/ai-festival-neduet.jpg"
+import express from "../Imgs/News/express.png"
+import newsCoverage from "../Imgs/News/newsCoverage.jpg"
+import Ned from "../Imgs/News/nedUni.jpg"
+
+
+//NEWS Videos
+import rvm from "../Videos/News/rvm.mp4"
+import ai_fest from "../Videos/News/ai_fest.mp4"
+import rvmDiscussion from "../Videos/News/rvmDiscussion.mp4"
+import rice_quality from "../Videos/News/rice_quality.mp4"
+import plasticRecycling from "../Videos/News/plasticRecycling.mp4"
+import riceARY from "../Videos/News/riceARY.mp4"
+import Sundus from "../Videos/News/Sundus.mp4"
+import smartdevice from "../Videos/News/smartdevice.mp4"
+import aquaegro from "../Videos/News/aquaegro.mp4"
+import secureapp from "../Videos/News/secureapp.mp4"
 
 export const News_ = [
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/rvm.mp4", // Placeholder URL
+      vidUrl: rvm,
       title: "Reverse Vending Machine discussion on 92 HD PLUS",
       category: "Plastic Recycling",
       date: 31,
@@ -9,9 +28,9 @@ export const News_ = [
       year: 21,
       description: "Our Manager Marketing Aaliya Tariq and Agriculture Engineer Sarah Jalal from Smart City Lab - NCAI, NED UET were live at 92 News HD Plus to pitch the idea of plastic recycling and waste management with ",
       readMore: "our in-house manufactured Reverse Vending Machine to promote environmental sustainability."
-    },
+    },  
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/ai_fest_3.0.mp4", // Placeholder URL
+      vidUrl: ai_fest,
       title: "AI Festival 3.0 held at NED University",
       category: "AI and ML",
       date: 29,
@@ -21,7 +40,7 @@ export const News_ = [
       readMore: " importance of AI and ML in today's era."
     },
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/PI.mp4", // Placeholder URL
+      vidUrl: rvmDiscussion,
       title: "Dr. Muhammad Khurram Discusses RVM on PTV News",
       category: "Plastic Recycling",
       date: 22,
@@ -31,7 +50,7 @@ export const News_ = [
       readMore: "manufactured Reverse Vending Machine."
     },
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/new_videos/rice_quality.mp4", // Placeholder URL
+      vidUrl: rice_quality,
       title: "GEO News Coverage on Rice Quality Analyzer",
       category: "Agriculture Technology",
       date: 18,
@@ -41,7 +60,7 @@ export const News_ = [
       readMore: "yellow grains with their weighted percentages."
     },
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/plastic-recycling-video.mp4", // Placeholder URL
+      vidUrl: plasticRecycling,
       title: "Express News Coverage: Plastic Recycling Machine",
       category: "Plastic Recycling",
       date: 24,
@@ -51,7 +70,7 @@ export const News_ = [
       readMore: "bottles for recycling."
     },
     {
-      vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/rice_quality_analyzer.mp4", // Placeholder URL
+      vidUrl: riceARY,
       title: "ARY News Coverage on Rice Quality Analyzer",
       category: "Agriculture Technology",
       date: 23,
@@ -61,7 +80,7 @@ export const News_ = [
       readMore: " chalky and yellow grains."
     },
     {
-        vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/samma-news-secure-app.mp4", // Placeholder URL
+        vidUrl: Sundus,
         title: "Samaa TV Interview Of Sunduss Fatima",
         category: "Technology",
         date: 6,
@@ -71,7 +90,7 @@ export const News_ = [
         readMore: "https://smartcitylab.neduet.edu.pk/samaa-interview"
       },
       {
-        vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/smartdevice.mp4", // Placeholder URL
+        vidUrl: smartdevice,
         title: "Smart Device to Help Farmers",
         category: "Agriculture Technology",
         date: 15,
@@ -81,7 +100,7 @@ export const News_ = [
         readMore: "irrigation."
       },
       {
-        vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/aquaegro.mp4", // Placeholder URL
+        vidUrl: aquaegro,
         title: "Aqua Agro, THE AI FARMER",
         category: "Agriculture Technology",
         date: 7,
@@ -92,7 +111,7 @@ export const News_ = [
       },
 
       {
-        vidUrl: "https://smartcitylab.neduet.edu.pk/images/News/secureapp.mp4", // Placeholder URL
+        vidUrl: secureapp,
         title: "Aaj News Coverage on Secure App",
         category: "Secure Technology",
         date: 6,
@@ -107,7 +126,7 @@ export const News_ = [
 //News Letters
 export const NewsLetter = [
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/newsletter.jpg", // Placeholder URL
+      imgUrl: newsLetter,
       title: "Newsletter '2019",
       category: "Year in Review",
       date: null,
@@ -117,7 +136,7 @@ export const NewsLetter = [
       readMore: "https://smartcitylab.neduet.edu.pk/newsletter.pdf"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/ai-festival-neduet.jpg", // Placeholder URL
+      imgUrl: Ai_ML,
       title: "AI Festival 2.0 held at NED University",
       category: "AI and ML",
       date: 22,
@@ -127,7 +146,7 @@ export const NewsLetter = [
       readMore: "https://www.brecorder.com/news/546822/"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/tribune.jpg", // Placeholder URL
+      imgUrl: newsCoverage,
       title: "Express Tribune Covers NCAI",
       category: "News Coverage",
       date: 23,
@@ -138,7 +157,7 @@ export const NewsLetter = [
     },
   
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/NEDmaingate.png", // Placeholder URL
+      imgUrl: Ned,
       title: "AI Festival 2.0 held at NED University",
       category: "AI and ML",
       date: 6,
@@ -148,7 +167,7 @@ export const NewsLetter = [
       readMore: "https://enggpost.com/ai-festival-held-at-ned-university/"
     },
     {
-      imgUrl: "https://smartcitylab.neduet.edu.pk/images/News/express.png", // Placeholder URL
+      imgUrl: express,
       title: "Student created Smart Secure App",
       category: "Technology",
       date: 6,

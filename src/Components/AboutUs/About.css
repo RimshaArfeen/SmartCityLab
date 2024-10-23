@@ -1,0 +1,46 @@
+/* Ensure all videos are stacked on top of each other */
+.transitioned-video {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes videoTransition {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity:0.8;
+  }
+}
+
+/* Apply animations to each video to fade in and out */
+.video-1 {
+  animation: videoTransition 20s infinite;
+}
+
+.video-2 {
+  animation: videoTransition 20s infinite;
+  animation-delay: 5s;
+}
+
+.video-3 {
+  animation: videoTransition 20s infinite;
+  animation-delay: 10s;
+}
+
+

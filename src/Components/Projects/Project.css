@@ -1,0 +1,89 @@
+#parent-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Increase gap between cards */
+  justify-items: center; /* Centers the cards horizontally */
+  align-items: start; /* Aligns the cards at the top */
+  margin: 0 auto; /* Center the whole grid */
+  max-width: 1400px; /* Limit the width of the grid */
+  padding: 0 20px; /* Standard white space on left and right */
+}
+
+.project-flip-card {
+  width: 330px; /* Increase card width */
+  height: 330px; /* Increase card height */
+  perspective: 1000px;
+  margin: 2rem 0;
+}
+
+.project-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.project-flip-card:hover .project-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.project-flip-card-front, .project-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.project-flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.project-flip-card-back {
+  background-color: #000e3a;
+  color: white;
+  padding: 2rem;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-flip-card-back h3{
+  font-size: 2rem;
+}
+@media (max-width:700px) {
+  #parent-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  .project-flip-card {
+    width: 450px; 
+    height: 450px; 
+    margin: auto;
+   
+  }
+ 
+}
+
+@media (min-width:701px) and (max-width:1100px) {
+  #parent-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  
+ 
+}
+@media (min-width:1103px) {
+  #parent-div {
+    display: grid;
+    width: 100vw;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  
+ 
+}

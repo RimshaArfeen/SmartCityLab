@@ -1,34 +1,33 @@
 
 import React from 'react'
 import "./Content.css"
-import VisionIcon from "../Imgs/processor.png"
-import MissionIcon from "../Imgs/goal.png"
-import AiPng from "../Imgs/ai.png"
 
-import Circle from "../Imgs/circleBg.png"
-import EarthHand from "../Imgs/EarthHand-01.png"
 
+ 
 const Content = () => {
-    return (
-        <>
-        {/* top-10 md:top-12 lg:top-40  */}
-        <section class="content  body-font overflow-hidden relative  h-fit top-10 md:top-4 lg:top-16 xl:top-12 neon-blue-bg">
-            <div class="w-full px-5 py-24 pb-14 mx-auto">
-                <div class="w-full mx-auto flex flex-wrap justify-between flex-col md:flex-row">
-                    {/* <img alt="ecommerce" class="lg:w-[45%] w-full lg:h-auto h-64 object-cover object-center rounded robot-shadow" src={Robot} /> */}
+  return (
+    <>
+      {/* top-10 md:top-12 lg:top-40  */}
+      <section class="content body-font overflow-hidden relative z-20 h-fit -top-40 md:-top-8 lg:top-[-14rem] neon-blue-bg mt-20" 
+     >
+         <div class="w-full px-5 pb-14 mx-auto"
+         data-aos="fade-up"  data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-in-out">
+          <div class="w-full mx-auto flex flex-wrap justify-between flex-col md:flex-row">
+            {/* <img alt="ecommerce" class="lg:w-[45%] w-full lg:h-auto h-64 object-cover object-center rounded robot-shadow" src={Robot} /> */}
 
-                    <div class="md:w-[65%] w-full md:pl-10 lg:py-6 mt-6 lg:mt-0 ">
-                        <h1 class="text-[2.2rem] md:text-[2.5rem] title-font font-light mb-1">Welcome to
-                            <p className=' uppercase font-bold'>Smart City Lab,<span className='font-bold  '> NCAI</span></p> </h1>
 
-                        <p class="text-sm md:text-lg">The centre is designed to become a leading hub of innovation,
-                            scientific research, knowledge transfer of the local economy, and training in the area of
-                            Artificial Intelligence(AI) and its closely associated fields.</p>
-                    </div>
+            <div class="md:w-5/6 lg:w-3/4  bg-white mx-auto flex flex-col text-center w-full mb-12 my-10 border-4 border-teal-500 p-5">
+              <h1 class="text-[2.2rem] md:text-[2.5rem] text-blue-800 title-font font-light mb-1">Welcome to<p class=' uppercase font-bold'>Smart City Lab,<span class='font-bold text-teal-600  '> NCAI</span></p> </h1>
+              <p class="text-sm md:text-lg leading-relaxed">The centre is designed to become a leading hub of innovation,
+                scientific research, knowledge transfer of the local economy, and training in the area of
+                Artificial Intelligence(AI) and its closely associated fields.</p>
+            </div>
 
-                    <div className='earthImg w-full md:w-[35%] h-auto flex justify-end relative'>
+
+
+            {/* <div className='earthImg w-full md:w-[35%] h-auto flex justify-end relative'>
                         <img src={EarthHand} alt="" className='earth md:w-full right-0 -bottom-[10rem]' id='earth' />
-                        {/* <img src={RobotHand} alt="" className='w-1/4 absolute right-0 bottom-0' /> */}
+                      
                     </div>
                 </div>
                 <div className=' h-[15rem]'>
@@ -74,11 +73,13 @@ const Content = () => {
               </div>
             </button>
           </div>
+        </div> */}
+
+          </div>
         </div>
-     
-        </>
-        
-    )
+      </section> </>
+
+  )
 }
 
 export default Content

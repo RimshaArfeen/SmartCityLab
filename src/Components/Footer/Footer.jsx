@@ -5,7 +5,7 @@ import "./Footer.css"
 import Logo from "../Imgs/NCAI Logo-01.png"
 const Footer = () => {
   return (
-    <footer class="body-font text-gray-600 bg-gray-100 border-t-gray-200 relative  top-36">
+    <footer class="body-font text-gray-300 bg-gradient-to-tr to-gray-800 from-gray-900 border-t-gray-200 relative bottom-0">
       <div class="mx-auto flex w-full flex-col flex-wrap justify-between px-4 md:px-10 py-10 md:flex-row md:flex-nowrap md:items-center lg:items-start">
         <div class="mx-auto w-full flex-shrink-0  md:mx-0 md:w-1/4 md:text-left my-auto">
           <a class="title-font flex items-center my-auto mx-auto justify-center font-medium text-gray-900 md:justify-start">
@@ -20,7 +20,7 @@ const Footer = () => {
               <span>
                 <li class="flex items-start justify-start mt-3">
                   <span class="mr-4 bg-pink- md:p-2 pt-0"><i class="ri-map-pin-fill text-xl md:text-3xl text-red-700"></i></span>
-                  <a class="text-gray-600 text-xs md:text-[1rem] leading-5"> 1st Floor Smart City Lab - HPCC Building NED
+                  <a class=" text-xs md:text-[1rem] leading-5"> 1st Floor Smart City Lab - HPCC Building NED
                     University of Engineering and Technology, Main University Road, Block 1, Gulistan-e-Johar,
                     Karachi(75270)-Sindh</a>
                 </li>
@@ -28,13 +28,13 @@ const Footer = () => {
               <span>
                 <li class="flex items-center justify-start mt-3">
                   <span class="mr-4 bg-pink- md:p-2"><i class="ri-mail-fill text-xl md:text-3xl text-green-800 "></i></span>
-                  <a class="text-gray-600 text-xs md:text-[1rem] leading-5"> ncaismartcitylab@gmail.com</a>
+                  <a class=" text-xs md:text-[1rem] leading-5"> ncaismartcitylab@gmail.com</a>
                 </li>
               </span>
               <span>
                 <li class="flex items-center justify-start mt-3">
                   <span class="mr-4 bg-pink- md:p-2"><i class="ri-phone-fill text-xl md:text-3xl text-amber-600"></i></span>
-                  <a class="text-gray-600 text-xs md:text-[1rem] leading-5"> +92-2199261261 (Ext.2682)</a>
+                  <a class=" text-xs md:text-[1rem] leading-5"> +92-2199261261 (Ext.2682)</a>
                 </li>
               </span>
             </nav>
@@ -42,9 +42,10 @@ const Footer = () => {
           </div>
         </div>
         <div class=" w-full lg:w-[25%] flex flex-col justify-start  items-center mx-auto ">
-          <h2 className=' text-center text-gray-800 text-xl my-10 font-bold uppercase'>Follow Us On</h2>
+          <h2 className=' text-center text-gray-100 text-xl my-10 font-bold uppercase'>Follow Us On</h2>
           <span class="mt-2 flex  sm:ml-auto sm:mt-0 justify-around w-[85%] mx-auto">
-            <a class="p-2  bg-blue-900 rounded-lg
+            {/* Facebook */}
+            <a href="https://www.facebook.com/SMARTCITYLAB.NCAI/?_rdc=1&_rdr" target='_blank' class="p-2  bg-blue-900 rounded-lg
             
             
             text-gray-100 hover:cursor-pointer">
@@ -52,15 +53,14 @@ const Footer = () => {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a class="ml-3 p-2 bg-blue-600 rounded-lg
-            
-            
-            text-gray-100 hover:cursor-pointer">
+ {/* Twitter */}
+            <a target="_blank" class="ml-3 p-2 bg-blue-600 rounded-lg text-gray-100 hover:cursor-pointer">
               <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a class="ml-3 p-2 bg-orange-700 rounded-lg
+ {/* Instagram */}
+            <a href='https://www.instagram.com/smartcitylab.ncai/' target='_blank' class="ml-3 p-2 bg-orange-700 rounded-lg
             
             
             text-gray-100 hover:cursor-pointer">
@@ -69,7 +69,9 @@ const Footer = () => {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a class="ml-3 p-2 bg-blue-800 rounded-lg
+
+             {/* LinkedIn */}
+            <a href='https://www.linkedin.com/company/smart-city-lab-ncai-ned-uet/posts/?feedView=all' target='_blank' class="ml-3 p-2 bg-blue-800 rounded-lg
             
             
             text-gray-100 hover:cursor-pointer">
@@ -81,9 +83,9 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div class="bg-gray-900">
+      <div class="bg-gray-900 border-t-2 border-gray-600">
         <div class="mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
-          <p class=" text-sm text-gray-200 text-center w-full ">
+          <p class=" text-sm  text-center w-full ">
             All rights reserved | Smart City Lab,
             NCAI | NEDUET
 

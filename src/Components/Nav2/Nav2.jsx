@@ -1,20 +1,29 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Content from '../Content/Content'
-
+ 
 const Nav2 = () => {
   return (
-    <div className='w-full text-gray-200 bg-[#24242465]'>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center py-4 uppercase text-base lg:w-5/6 justify-around">
-        <NavLink to="/content" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">our technology</NavLink>
-        <NavLink to="/mission" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">mission</NavLink>
-        <NavLink to="/snapshots" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">snapshots</NavLink>
-        <NavLink to="/researchAreas/projects" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">research areas</NavLink>
-        <NavLink to="/inFocus" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">infocus</NavLink>
-        <NavLink to="/nationalSolutions" className="mr-5 transition-all duration-300 hover:cursor-pointer hover:text-gray-900 hover:underline underline-offset-4">national solutions</NavLink>
-      </nav>
-    </div>
-  )
+    <div className='w-fit mx-auto text-blue-800 relative z-30 top-36 md:top-52 lg:top-32'>
+    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center py-4 uppercase text-base gap-y-2 lg :w-5/6 justify-around">
+      <NavLink to="/" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700 hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">our technology</NavLink>
+
+      <NavLink to="/mission" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700 hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">mission</NavLink>
+
+      <NavLink to="/snapshots" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700 hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">snapshots</NavLink>
+
+      <NavLink to="/successStories" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700  hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">success stories</NavLink>
+
+      <NavLink to="/team" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700 hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">Leaderships</NavLink>
+
+      {/* <NavLink to="/nationalSolutions" className="mr-5 transition-all duration-300 hover:cursor-pointer focus:text-white focus:bg-blue-700 hover:text-blue-600  p-1 rounded-lg border-2 px-2 border-blue-700">national solutions</NavLink> */}
+
+    </nav>
+  </div>
+
+
+    
+  ) 
 }
 
-export default Nav2
+export default Nav2;

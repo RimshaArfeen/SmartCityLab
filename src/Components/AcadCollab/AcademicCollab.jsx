@@ -1,31 +1,74 @@
-
 import React from 'react';
+import Slider from 'react-slick';
 import "./AcademicCollab.css";
 import data from "./data.json";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+ 
 const AcademicCollab = () => {
+  // Slick slider settings
+  const settings = {
+    
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, 
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <h1 className="text-4xl text-center font-semibold  text-indigo-950">Our Academic Collaboration</h1>
-        <div className=' flex justify-center items-center my-5 mb-20'>
-            <hr className=' w-1/5 bg-indigo-900 h-[3px]' />
-            <span><i class="ri-arrow-down-s-line text-4xl text-amber-700"></i></span>
-            <hr className=' w-1/5 bg-indigo-900 h-[3px]' />
+    <section className="body-font lg:w-5/6 mx-auto mt-20 relative top-36 "
+    data-aos="fade-down">
+      <div className="p-5 mx-auto  bg-gray-100">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          
+          {/* Heading Section */}
+          <div className=" w-full md:w-[30%] lg:w-1/4 flex-shrink-0 flex md:flex-col uppercase border-l-4 md:border-l-0 md:border-r-4 border-amber-700 px-5
+          py-5"
+          data-aos="fade-right">
+            <span className="font-semibold title-font text-xl  text-gray-700 mr-1">Our Academic</span>
+            <span className="font-bold tracking-wide text-xl md:text-2xl  text-gray-700"> Collaboration</span>
           </div>
-        <div className="lg:w-[90%] flex flex-wrap -m-4 items-center mx-auto ">
-          {data.map((item, index) => (
-            <div key={index} className=" collab md:w-1/4 p-4 w-1/2 ">
-              <a className="block relative h-fit rounded overflow-hidden">
-                <img 
-                  alt={item.alt} 
-                  className="py-1 px-2 object-center w-full h-full lg:w-[90%] block border-2 border-gray-300 shadow-sm rounded-lg
-                   aspect-video  object-contain mix-blend-color-burn" 
-                  src={item.src} 
-                />
-              </a>
-            </div>
-          ))}
+
+          {/* React Slick Slider */}
+          <div className=" w-full md:w-[70%] lg:w-3/4"
+          data-aos="fade-left">
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <div key={index} className="p-4 w-1/2 md:w-1/3 lg:w-1/5">
+                  <div className=" relative h-44 rounded overflow-hidden  bg-white flex justify-center items-center">
+                    <img
+                      alt={item.alt}
+                      className="py-1 px-2 object-center w-full h-full lg:w-[90%] block shadow-sm rounded-lg aspect-video object-contain"
+                      src={item.src}
+                    />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
         </div>
       </div>
     </section>
