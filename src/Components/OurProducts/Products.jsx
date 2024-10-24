@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <>
     
-            <div className=' h-24 w-full absolute -z-10 bg-indigo-900 top-0'></div>
+    <div className='h-36 md:h-[30vh] lg:h-28 w-full -z-10 bg-blue-900 top-0 absolute'></div>
     <section className="body-font pb-24 py-24 relative">
 
       <div className="w-full xl:w-[90%] px-5 md:px-2 lg:px-10 mx-auto relative top-36 md:top-56 lg:top-7">

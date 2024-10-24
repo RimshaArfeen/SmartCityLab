@@ -5,8 +5,8 @@ import { Data } from './MissionData';
 const Mission = () => {
     return (
         <>
-            <div className='h-36 md:h-[30vh] lg:h-24 w-full -z-10 bg-blue-900 top-0 absolute'></div>
-            <div id="mission" className="px-4 py-8 lg:px-16 lg:py-12 bg-gray-50 text-justify relative top-28 md:top-44 lg:top-10 mb-16">
+            <div className='h-36 md:h-[30vh] lg:h-28 w-full -z-10 bg-blue-900 top-0 absolute'></div>
+            <div id="mission" className="px-4 py-8 lg:px-16 lg:py-12 bg-gray-50 text-justify relative top-28 md:top-36 lg:top-10 mb-40 md:mb-56 lg:mb-40">
                 <div className="w-full   mx-auto  md:flex-row flex-col justify-between items-start">
                     <div className="mb-10 md:mb-0 flex justify-end items-center flex-col my-20"
                     >

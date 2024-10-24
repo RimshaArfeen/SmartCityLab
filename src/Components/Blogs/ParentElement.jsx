@@ -33,7 +33,7 @@ const ParentElement = () => {
 
   return (
     <>
-      <div className='h-32 md:h-56 lg:h-24 w-full absolute -z-10 bg-indigo-900 top-0'></div>
+      <div className='h-32 md:h-56 lg:h-28 w-full absolute -z-10 bg-indigo-900 top-0'></div>
 
       <section className="text-gray-600 body-font py-12">
         {/* Background Section with Heading */}

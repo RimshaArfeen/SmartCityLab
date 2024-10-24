@@ -12,7 +12,7 @@ const CategoryTabs = ({ categories, selectedCategory, setSelectedCategory }) => 
           className={`px-4 py-2 rounded-lg transition-transform duration-300 ${
             selectedCategory === category.key
               ? 'bg-blue-700 scale-90 text-white'
-              : 'bg-blue-100 hover:bg-blue-700 text-blue-800 hover:scale-105'
+              : 'bg-blue-100 hover:bg-blue-700 text-blue-800 hover:scale-95'
           }  focus:outline-none focus:ring-2 focus:ring-blue-500`}
           aria-pressed={selectedCategory === category.key}
           aria-label={`Show ${category.name} team members`}

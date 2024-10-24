@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import Logo from "../Imgs/NCAI Logo-01.png";
+import SCL from "../Imgs/SMARTCITY.PNG"
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
       <div  className={` ${isScrolled ? 'transform ': ''} w-[100%] mx-auto flex flex-col flex-wrap items-center p-2 md:flex-row`}>
         <a className="title-font flex items-center md:justify-center justify-around md:mb-0 w-1/2 md:w-full lg:w-1/4">
           <span className='Logo p-2'>
-            <img src={Logo} alt="NCAI" className={`${isScrolled ? 'w-[70%] h-auto md:w-1/5 lg:w-[45%] md:mx-auto ': 'w-5/6 h-auto md:w-1/3 lg:w-[50%] md:mx-auto'}`} />
+            <img src={SCL} alt="NCAI" className={`${isScrolled ? 'w-[30%] md:ml-[47%]  h-auto md:w-1/5 lg:w-[30%] md:mx-auto ': 'w-[35%] h-auto md:w-1/6 md:ml-[51%]  lg:w-[27%] md:mx-auto'}`} />
           </span>
           <div className="barMenu w-1/5 flex justify-center items-center">
             <button className="hover:cursor-pointer md:hidden my-6" onClick={toggleBtn}>

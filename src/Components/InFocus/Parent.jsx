@@ -37,7 +37,7 @@ const Parent = () => {
 
   return (
     <>
-      <div className='h-36 md:h-[30vh] lg:h-24 w-full -z-10 bg-blue-900 top-0 absolute'></div>
+      <div className='h-36 md:h-[30vh] lg:h-28 w-full -z-10 bg-blue-900 top-0 absolute'></div>
 
       <section className="text-gray-600 body-font">
         <div className="w-full lg:[90%] flex flex-col justify-between px-5 mx-auto relative top-36 md:top-56 lg:top-32 mb-40 ">

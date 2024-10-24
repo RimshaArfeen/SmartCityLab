@@ -25,7 +25,7 @@ const Team = () => {
 
   return (
     <>
-<div className=' h-28 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+<div className=' h-28 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
       <div className=" min-h-screen relative top-0 py-8 mb-52">
         {/* Navigation Section */}
         <CategoryTabs

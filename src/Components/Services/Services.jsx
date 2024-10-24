@@ -14,8 +14,8 @@ const Services = () => {
     <>
 
 
-      <div className='h-32 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
-      <section class="body-font px-5 relative mb-28">
+      <div className='h-32 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
+      <section class="body-font px-5 relative mb-48">
         <div className=' w-full h-fit relative  top-36 md:top-56 lg:top-28 '>
           <div class="flex flex-col w-full my-3 ">
             <h1 className=' uppercase font-bold text-4xl text-indigo-800 w-full text-center   mb-1'

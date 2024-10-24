@@ -16,9 +16,9 @@ const Publications = () => {
 
   return (
     <>
-      <div className=' h-28 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+      <div className=' h-28 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
       <section className="text-gray-600 body-font relative">
-        <div className="w-fullpx-0 md:px-5 py-24 mx-auto flex flex-col md:flex-row  justify-around items-start relative top-14 md:top-36 ">
+        <div className="w-fullpx-0 md:px-5 py-24 mb-20 mx-auto flex flex-col md:flex-row  justify-around items-start relative top-14 md:top-36 ">
           {/* Articles */}
           <h1 className=" ml-2 title-font text-2xl my-1 md:hidden font-semibold tracking-wide text-gray-900 uppercase  ">
             Published Years

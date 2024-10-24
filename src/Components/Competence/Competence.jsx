@@ -28,7 +28,7 @@ const Competence = () => {
 
     return (
         <>
-         <div className=' h-28 md:h-48 lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+         <div className=' h-28 md:h-48 lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
    
         <section>
         <div className="competence-section w-full p-6 mb-36 relative top-28 md:top-48 lg:top-28 z-10 flex flex-col items-center">

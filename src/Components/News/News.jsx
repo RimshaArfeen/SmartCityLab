@@ -13,7 +13,7 @@ const News = () => {
     return (
         <>
 
-            <div className='h-36 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0 '></div>
+            <div className='h-36 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0 '></div>
 
             <section class="body-font overflow-hidden text-gray-600 relative top-28 md:top-44 lg:top-16 mb-48">
                 <div data-aos="fade-down" data-aos-duration="1000" class="flex flex-col text-center w-fit my-16 mb-8 mx-auto">

@@ -3,13 +3,14 @@
 import React from 'react'
 import "./Footer.css"
 import Logo from "../Imgs/NCAI Logo-01.png"
+import SMARTCITY from "../Imgs/SMARTCITY.png"
 const Footer = () => {
   return (
     <footer class="body-font text-gray-300 bg-gradient-to-tr to-gray-800 from-gray-900 border-t-gray-200 relative bottom-0">
       <div class="mx-auto flex w-full flex-col flex-wrap justify-between px-4 md:px-10 py-10 md:flex-row md:flex-nowrap md:items-center lg:items-start">
         <div class="mx-auto w-full flex-shrink-0  md:mx-0 md:w-1/4 md:text-left my-auto">
           <a class="title-font flex items-center my-auto mx-auto justify-center font-medium text-gray-900 md:justify-start">
-            <img src={Logo} alt="NCAI NEDUET" className=' w-5/6 mx-auto' />
+            <img src={SMARTCITY} alt="NCAI NEDUET" className='w-2/3 mx-auto' />
           </a>
 
         </div>

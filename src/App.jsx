@@ -57,7 +57,7 @@ useEffect(() => {
 
           <div className="relative">
             <div className="bgImg absolute top-0 left-0  md:h-full -z-10 w-full">
-              <video autoPlay loop muted playsInline className="videoBg h-[70vh] md:h-screen  ">
+              <video autoPlay loop muted playsInline className="videoBg h-[100vh] md:h-screen  ">
                 <source src={bgVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -66,7 +66,7 @@ useEffect(() => {
             {/* Page Components */}
             <ScrollToTop />
             <Navbar />
-            <div className='w-fit mx-auto text-gray-200 relative z-30 top-32 md:top-48 lg:top-24'>
+            <div className='w-fit mx-auto text-gray-200 relative z-30 top-32 md:top-56 lg:top-24'>
               <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center py-4 uppercase text-base gap-y-2 justify-around">
                 <NavLink to="/" className="mr-5 transition-all duration-300 bg-[#0000005d] hover:cursor-pointer focus:text-white focus:bg-gray-700 hover:text-cyan-600  p-1 rounded-lg border-2 px-2 border-gray-700">our technology</NavLink>
 
@@ -135,17 +135,7 @@ useEffect(() => {
         </>
       ),
     },
-    //About
-    // {
-    //   path: "/about",
-    //   element: (
-    //     <>
-    //                <ScrollToTop />
-    //       <Content />
-    //       <Footer />
-    //     </>
-    //   ),
-    // },
+   
     //Leaderships
     {
       path: "/team",
@@ -166,7 +156,7 @@ useEffect(() => {
         <>
           <ScrollToTop />
           <Navbar />
-
+<Nav2/>
           <Achievement />
           <Footer />
         </>

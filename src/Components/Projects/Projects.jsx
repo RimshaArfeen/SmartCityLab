@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <>
-          <div className='h-32 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+          <div className='h-28 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
 
       <section className="text-gray-600 body-font h-fit mb-60">
         <div className="w-full mx-auto flex py-4 md:flex-row flex-col items-center relative  top-36 md:top-52 lg:top-28 mb-24 ">

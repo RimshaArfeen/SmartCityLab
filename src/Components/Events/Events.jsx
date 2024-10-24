@@ -11,7 +11,7 @@ const Events = () => {
  
   return (
     <> 
-         <div  className='h-32 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
+         <div  className='h-32 md:h-[30vh] lg:h-28 w-full absolute -z-10 bg-blue-900 top-0'></div>
          <section className="text-indigo-700 body-font overflow-hidden mx-auto ">
       <h1 className=' uppercase font-bold text-4xl text-indigo-800 w-full text-center relative top-36 md:top-56 lg:top-28'
         data-aos="fade-up">Events</h1>
