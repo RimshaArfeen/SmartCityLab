@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import LoadingSvg from "../Imgs/spinner.svg"
 import './Contact.css';
 
 const Contact = () => {
@@ -6,12 +7,26 @@ const Contact = () => {
   const inputHandler = (e) => {
     setYourLoc(e.target.value)
   }
+  const [Loading, setLoading] = useState(true)
+  useEffect(() => {
+   setTimeout(() => {
+     setLoading(false)
+   }, 1000);
+  }, [])
+  
 
   return (
     <section className="text-gray-300 body-font relative bg-[#040f2c] pb-16">
       <div className="w-full xl:w-[90%] px-5 py-24 mx-auto flex sm:flex-nowrap justify-between flex-wrap relative top-10 md:top-32 lg:top-0">
         <div className="w-full lg:w-2/3 h-[82vh] md:w-1/2 lg:mr-4 xl:mr-12  rounded-lg overflow-hidden flex items-end justify-start relative">
+        {Loading && (
+  <div className=' w-full h-screen flex justify-center items-center' ><img src={LoadingSvg} alt="" className=' w-20 h-20 bg-[#040f2c]' /></div>
+)
+}
+{!Loading && (
+
           <iframe width="100%" height="100%" className="absolute inset-0 top-5" title="map" scrolling="no" src={`https://maps.google.com/maps?q=${yourLoc}&hl=en&z=6&output=embed`}></iframe>
+)}
 
         </div>
         <div className="w-full ml-4 md:ml-0 lg:w-1/3 md:w-[45%]  flex flex-col lg:ml-auto md:py-8 mt-8 md:mt-0">
@@ -19,12 +34,12 @@ const Contact = () => {
           <p className="leading-relaxed mb-5">We value your feedback! Reach out to us and let us know how we can enhance our services.</p>
 
 
-          <div className="relative mb-4">
-            <label for="loc" className="leading-7 text-sm">Location</label>
-            <input type="text" id="loc" name="loc" className="w-[97%] mx-auto  rounded border border-gray-300 bg-[#5c5c5c28] focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          <div className="relative hidden mb-4">
+            {/* <label for="loc" className="leading-7 text-sm">Location</label> */}
+            <input type="text" id="loc" name="loc" className="w-[97%] hidden mx-auto  rounded border border-gray-300 bg-[#5c5c5c28] focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={inputHandler} />
           </div>
-          <div className="relative flex lg:flex-col flex-wrap py-6 rounded shadow-md bg-[#07062e46]">
+          <div className="relative flex lg:flex-col flex-wrap py-6 rounded shadow-md bg-[#13114448]">
             <div className=" w-full px-1 md:px-6 mb-4 flex items-start">
               <i className="ri-map-pin-fill text-red-700 mr-3" style={{ fontSize: '24px' }}></i> {/* Address icon */}
               <div>

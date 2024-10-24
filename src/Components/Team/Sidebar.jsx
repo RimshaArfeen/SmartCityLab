@@ -1,12 +1,12 @@
 // src/components/Sidebar.js
 
 import React from 'react';
-
+import Director from "../Imgs/Leadership/dr.khurram.jpg"
 const Sidebar = () => {
   return (
     <div className="bg-white p-6 shadow-lg rounded-lg mt-10 lg:mt-0 mb-16 md:mb-0">
       <img
-        src="https://www.lbl.gov/wp-content/uploads/2021/08/Mike_Witherell_sm_2.jpg"
+        src={Director}
         alt="Director"
         className="w-full h-auto rounded-md"
       />

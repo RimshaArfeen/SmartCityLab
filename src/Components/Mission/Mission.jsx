@@ -1,7 +1,6 @@
 import React from 'react';
 import './Mission.css';
 import { Data } from './MissionData';
-import Img from "../Imgs/MissionIcons/knowledge-sharing.png"
 
 const Mission = () => {
     return (

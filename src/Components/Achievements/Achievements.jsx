@@ -8,7 +8,7 @@ const Achievement = () => {
     <>
     <div className='h-32 md:h-[30vh] lg:h-24 w-full absolute -z-10 bg-blue-900 top-0'></div>
 
-    <div className="achievements-section  relative  top-36 md:top-56 lg:top-28 ">
+    <div className="achievements-section  relative  top-36 md:top-56 lg:top-28 pb-48 ">
       <h1 className="achievements-heading">SUCCESS STORIES</h1>
 
       <div className="achievement">

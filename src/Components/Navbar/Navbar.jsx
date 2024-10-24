@@ -49,25 +49,25 @@ const Navbar = () => {
             <NavLink to="/" className="nav-link hover:cursor-pointer ml-2 md:ml-0">Smart City</NavLink>
           </div>
           <div className="dropdown md:border-none border py-1 w-full md:w-fit">
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-start'>
               <NavLink  to="/research/projects" className="nav-link hover:cursor-pointer ml-2 md:ml-0">Research & Programs</NavLink>
             </div>
             
           </div>
           <div className="dropdown md:border-none border py-1 w-full md:w-fit">
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-start'>
               <NavLink to="/media/news" className="nav-link hover:cursor-pointer ml-2 md:ml-0">media</NavLink>
             </div>
            
           </div>
           <div className="dropdown md:border-none border py-1 w-full md:w-fit">
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-start'>
               <NavLink to="/offer/products" className="nav-link hover:cursor-pointer ml-2 md:ml-0">Insights & Offerings</NavLink>
             </div>
 
           </div>
           <div className="dropdown md:border-none border py-1 w-full md:w-fit">
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-start'>
               <NavLink to="/contact" className="nav-link hover:cursor-pointer ml-2 md:ml-0">Contact Us</NavLink>
             </div>
            
